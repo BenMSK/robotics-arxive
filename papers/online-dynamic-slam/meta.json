@@ -28,5 +28,6 @@
     "ko": "더 sparse한 Hybrid factor graph와 물체별 iSAM2 smoother로 Dynamic SLAM을 incremental하게 만들어, 정확도는 비슷하게 유지하면서 baseline보다 5배 빠른 1-5 Hz로 돌립니다."
   },
   "abstract": "Dynamic SLAM methods jointly estimate for the static and dynamic scene components. However, existing approaches, while accurate, are computationally expensive and unsuitable for online applications. In this work, we present a novel factor-graph formulation and system architecture for Dynamic SLAM that inherently supports incremental optimisation and online estimation. This represents the first formulation explicitly designed to leverage incremental inference methods in the dynamic setting. On multiple datasets, we demonstrate that our method achieves camera pose and object motion accuracy equal to or better than state-of-the-art. We further analyse the structural properties of our approach to demonstrate its scalability and provide insight regarding the challenges of solving Dynamic SLAM incrementally. Finally, we show that our formulation leads to problem structure well-suited to incremental solvers, and our system architecture further enhances performance, achieving a 5x speed-up over existing methods. Code is open-sourced.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

@@ -1,18 +1,34 @@
 {
   "id": "svn-icp",
   "title": "SVN-ICP: Uncertainty Estimation of ICP-Based LiDAR Odometry Using Stein Variational Newton",
-  "authors": ["Shiping Ma", "Haoming Zhang", "Marc Toussaint"],
+  "authors": [
+    "Shiping Ma",
+    "Haoming Zhang",
+    "Marc Toussaint"
+  ],
   "venue": "ICRA 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["LiDAR", "Uncertainty", "Degeneracy", "RobustSLAM"],
-  "links": { "arxiv": "https://arxiv.org/abs/2509.08069", "pdf": "https://arxiv.org/pdf/2509.08069", "code": "https://github.com/LIS-TU-Berlin/SVN-ICP", "project": "", "official": "" },
+  "tags": [
+    "LiDAR",
+    "Uncertainty",
+    "Degeneracy",
+    "RobustSLAM"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2509.08069",
+    "pdf": "https://arxiv.org/pdf/2509.08069",
+    "code": "https://github.com/LIS-TU-Berlin/SVN-ICP",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "ICP with a particle cloud moved by Stein Variational Newton; the spread is an ICP covariance that tells a Kalman filter to trust the IMU in corridors.",
     "ko": "Stein Variational Newton으로 움직이는 particle 여러 개로 ICP를 풀고, 그 퍼짐을 covariance로 써서 복도 같은 degeneracy 구간에서 Kalman filter가 IMU를 믿게 합니다."
   },
   "abstract": "This letter introduces SVN-ICP, a novel Iterative Closest Point (ICP) algorithm with uncertainty estimation that leverages Stein Variational Newton (SVN) on manifold. Designed specifically for fusing LiDAR odometry in multisensor systems, the proposed method ensures accurate pose estimation and consistent noise parameter inference, even in LiDAR-degraded environments. By approximating the posterior distribution using particles within the Stein Variational Inference framework, SVN-ICP eliminates the need for explicit noise modeling or manual parameter tuning. To evaluate its effectiveness, we integrate SVN-ICP into a simple error-state Kalman filter alongside an IMU and test it across multiple datasets spanning diverse environments and robot types. Extensive experimental results demonstrate that our approach outperforms best-in-class methods on challenging scenarios while providing reliable uncertainty estimates. We release our code at https://github.com/LIS-TU-Berlin/SVN-ICP.git. A high-resolution video demonstration is available at https://youtu.be/c4QsMd1weik.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

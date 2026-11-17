@@ -1,18 +1,40 @@
 {
   "id": "shift-drift",
   "title": "Shift & Drift: A Zero-Shot Benchmark for Generalizable and Robust Autonomous Driving Motion Planning",
-  "authors": ["Alessandro Canevaro", "Hang Yu", "Julian Schmidt", "Peizheng Li", "Silvan Lindner", "Wilhelm Stork", "Georg Martius", "Julian Jordan"],
+  "authors": [
+    "Alessandro Canevaro",
+    "Hang Yu",
+    "Julian Schmidt",
+    "Peizheng Li",
+    "Silvan Lindner",
+    "Wilhelm Stork",
+    "Georg Martius",
+    "Julian Jordan"
+  ],
   "venue": "IROS 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["Benchmark", "MotionPlanning", "ReinforcementLearning", "ImitationLearning", "AutonomousDriving"],
-  "links": { "arxiv": "https://arxiv.org/abs/2607.07844", "pdf": "https://arxiv.org/pdf/2607.07844", "code": "https://github.com/alessandro-canevaro/Shift-Drift", "project": "", "official": "" },
+  "tags": [
+    "Benchmark",
+    "MotionPlanning",
+    "ReinforcementLearning",
+    "ImitationLearning",
+    "AutonomousDriving"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2607.07844",
+    "pdf": "https://arxiv.org/pdf/2607.07844",
+    "code": "https://github.com/alessandro-canevaro/Shift-Drift",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "Zero-shot tests on German drone data plus actuation noise: imitation planners lose up to 76%, rule-based PDM stays safe but slow, RL-trained CaRL holds up best.",
     "ko": "독일 드론 데이터 zero-shot 시험과 actuation 노이즈에서 IL planner는 최대 76% 무너지고, 규칙 기반 PDM은 안전하지만 느리며, RL로 학습한 CaRL이 가장 잘 버팁니다."
   },
   "abstract": "While closed-loop motion planners trained on large-scale, object-level datasets, e.g., nuPlan, demonstrate strong in-distribution (ID) performance, their generalization to novel urban topologies and recovery mechanisms following execution perturbations remain under-explored. To address this, we present Shift & Drift, a novel dual-track benchmark designed to rigorously stress-test motion planners across two critical axes of distribution shift: (1) The Semantic Shift Track leverages a novel conversion pipeline that transforms the aerial, DeepScenario Open 3D dataset into the nuPlan simulation framework. This enables zero-shot evaluation of planners trained on North American and Singaporean data against 1,182 scenarios spanning four German cities and the US city of San Francisco featuring dense pedestrian-cyclist interactions. (2) The State-Distribution Drift Track injects stochastic perturbations into the ego vehicle's dynamics to quantify robustness against compounding execution errors. Based on this, we systematically evaluate the failure modes of diverse planning paradigms under semantic and state-distribution shifts. While imitation learning methods achieve high scores in ID benchmarks, they exhibit significant failures under semantic shift, particularly in pedestrian-dense environments, and suffer from persistent drift when subjected to temporally correlated actuation noise. In contrast, the evaluated reinforcement-learning-based planner demonstrates more graceful degradation, maintaining higher safety and progress metrics across both tracks. Our findings reveal an empirical trade-off between imitation fidelity and closed-loop resilience, providing the community with a rigorous benchmark to evaluate progress toward reliable deployment.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

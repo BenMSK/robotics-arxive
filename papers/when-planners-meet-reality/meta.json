@@ -1,18 +1,36 @@
 {
   "id": "when-planners-meet-reality",
   "title": "When Planners Meet Reality: How Learned, Reactive Traffic Agents Shift nuPlan Benchmarks",
-  "authors": ["Steffen Hagedorn", "Luka Donkov", "Aron Distelzweig", "Alexandru P. Condurache"],
+  "authors": [
+    "Steffen Hagedorn",
+    "Luka Donkov",
+    "Aron Distelzweig",
+    "Alexandru P. Condurache"
+  ],
   "venue": "ICRA 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["Benchmark", "MotionPlanning", "AutonomousDriving", "ReinforcementLearning", "ImitationLearning"],
-  "links": { "arxiv": "https://arxiv.org/abs/2510.14677", "pdf": "https://arxiv.org/pdf/2510.14677", "code": "https://github.com/shgd95/InteractiveClosedLoop", "project": "", "official": "" },
+  "tags": [
+    "Benchmark",
+    "MotionPlanning",
+    "AutonomousDriving",
+    "ReinforcementLearning",
+    "ImitationLearning"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2510.14677",
+    "pdf": "https://arxiv.org/pdf/2510.14677",
+    "code": "https://github.com/shgd95/InteractiveClosedLoop",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "Swapping nuPlan's passive IDM traffic for learned SMART agents lowers almost every planner's score, reshuffles the ranking and puts RL-trained CaRL first.",
     "ko": "nuPlan의 수동적인 IDM 교통을 학습된 SMART agent로 바꾸면 거의 모든 planner 점수가 떨어지고 순위가 바뀌며, RL로 학습한 CaRL이 1위가 됩니다."
   },
   "abstract": "Planner evaluation in closed-loop simulation often uses rule-based traffic agents, whose simplistic and passive behavior can hide planner deficiencies and bias rankings. Widely used IDM agents simply follow a lead vehicle and cannot react to vehicles in adjacent lanes, hindering tests of complex interaction capabilities. We address this issue by integrating the state-of-the-art learned traffic agent model SMART into nuPlan. Thus, we are the first to evaluate planners under more realistic conditions and quantify how conclusions shift when narrowing the sim-to-real gap. Our analysis covers 14 recent planners and established baselines and shows that IDM-based simulation overestimates planning performance: nearly all scores deteriorate. In contrast, many planners interact better than previously assumed and even improve in multi-lane, interaction-heavy scenarios like lane changes or turns. Methods trained in closed-loop demonstrate the best and most stable driving performance. However, when reaching their limits in augmented edge-case scenarios, all learned planners degrade abruptly, whereas rule-based planners maintain reasonable basic behavior. Based on our results, we suggest SMART-reactive simulation as a new standard closed-loop benchmark in nuPlan and release the SMART agents as a drop-in alternative to IDM at https://github.com/shgd95/InteractiveClosedLoop.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

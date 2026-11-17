@@ -55,13 +55,16 @@ DYROS beyond what is written here.
   "links": { "arxiv": "https://arxiv.org/abs/2509.13956", "pdf": "https://arxiv.org/pdf/2509.13956", "code": "", "project": "", "official": "" },
   "tldr": { "en": "One sentence, at most 160 characters.", "ko": "한 문장, 160자 이내." },
   "abstract": "The paper's abstract, verbatim.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }
 ```
 
 - `track`: `"2026"` for the 2026 conference papers, `"bible"` for classics. Bible entries: `venue` is where it was
   published, e.g. `"T-RO 2021"`, `"RSS 2023"`, `"ICLR 2025"`; `year` is the publication year.
 - `kind`: `"full"` (post written) or `"abstract"` (no full text available: abstract only, and fill `abstract_ko`).
+- `added`: the day the entry was added (YYYY-MM-DD). The Log tab groups papers by it; also add a dated section to
+  `log.en.md` / `log.ko.md` saying what was added and anything left out.
 - `authors`: as printed on the paper, "First Last". Leave empty links as `""`. Add `code`/`project` when the paper
   gives them.
 - `tags`: 3–6, CamelCase, no `#`, picked from this list (add a new one only if nothing fits):

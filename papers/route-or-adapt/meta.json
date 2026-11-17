@@ -1,18 +1,41 @@
 {
   "id": "route-or-adapt",
   "title": "To Route or to Adapt? Multi-Expert Diffusion Planners in Unseen Regions",
-  "authors": ["Yun Li", "Ehsan Javanmardi", "Simon Thompson", "Jiachen Gong", "Qunli Zhang", "Zifan Zeng", "Shiming Liu", "Peng Wang", "Yidu Zhang", "Manabu Tsukada"],
+  "authors": [
+    "Yun Li",
+    "Ehsan Javanmardi",
+    "Simon Thompson",
+    "Jiachen Gong",
+    "Qunli Zhang",
+    "Zifan Zeng",
+    "Shiming Liu",
+    "Peng Wang",
+    "Yidu Zhang",
+    "Manabu Tsukada"
+  ],
   "venue": "CoRL 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["Diffusion", "MotionPlanning", "AutonomousDriving", "Uncertainty"],
-  "links": { "arxiv": "https://arxiv.org/abs/2610.31095", "pdf": "https://arxiv.org/pdf/2610.31095", "code": "https://github.com/tlab-wide/RouteOrAdapt", "project": "", "official": "https://openreview.net/forum?id=PJuQx9kBg5" },
+  "tags": [
+    "Diffusion",
+    "MotionPlanning",
+    "AutonomousDriving",
+    "Uncertainty"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2610.31095",
+    "pdf": "https://arxiv.org/pdf/2610.31095",
+    "code": "https://github.com/tlab-wide/RouteOrAdapt",
+    "project": "",
+    "official": "https://openreview.net/forum?id=PJuQx9kBg5"
+  },
   "tldr": {
     "en": "In unseen regions, picking the best of four regional expert adapters gains under 1 m; reward fine-tuning on 20 local scenes halves the offset, but only open-loop.",
     "ko": "처음 가는 지역에서 지역별 expert adapter 4개 중 최선을 골라도 1 m도 못 줄이지만, 현지 장면 20개로 reward fine-tuning하면 오차가 절반이 됩니다. 단, open-loop 기준입니다."
   },
   "abstract": "Diffusion trajectory planners with domain-specific experts face a practical question in unseen regions: can they rely on selecting among existing experts, or must the planner itself adapt? We study this question using a planner with a shared adapter and per-domain expert adapters. Across three real-world held-out maps, none of eight test-time routing schemes improves the fleet-mean lateral offset over the static default, which uses the same expert for every scene. Even an oracle that selects the best expert for each scene reduces the mean offset by only 0.9 m. In contrast, reward-based fine-tuning on just 20 target-region scenes yields substantially larger gains. On matched evaluation slices, joint replay achieves a fleet-mean offset of 6.9 m, compared with 12.4 m for the static default. Comparisons under the same target-region training budget show that target-region training drives the improvement, while replaying training scenes limits forgetting on the original ODDs. On nuPlan, fine-tuning across training cities also improves open-loop offsets, although closed-loop performance deteriorates. Further diagnostics reveal that two test-time adaptation baselines achieve low offsets by producing degenerate trajectories. These results show the limited headroom for selecting among existing experts and the greater open-loop gains available from adapting the planner.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

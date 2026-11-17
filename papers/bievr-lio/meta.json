@@ -31,5 +31,6 @@
     "ko": "voxel 평면마다 5 cm 해상도의 height image를 저장해 아주 작은 요철로도 정합하는 LIO입니다. 다른 방법이 발산하는 직선 지하철 터널에서도 버팁니다."
   },
   "abstract": "Reliable odometry is essential for mobile robots as they increasingly enter more challenging environments, which often contain little information to constrain point cloud registration, resulting in degraded LiDAR–Inertial Odometry (LIO) accuracy or even divergence. To address this, we present BIEVR-LIO, a novel approach designed specifically to exploit subtle variations in the available geometry for improved robustness. We propose a high-resolution map representation that stores surfaces as compact voxel-wise oriented height images. This representation can directly be used for registration without calculation of intermediate geometric primitives while still supporting efficient updates. Since informative geometry is often sparsely distributed in the environment, we further propose a map-informed point sampling strategy that focuses registration on geometrically informative regions, improving robustness in uninformative environments while reducing computational cost. Extensive evaluation across multiple sensors, platforms, and environments demonstrates state-of-the-art performance in well-constrained scenes and substantial improvements in challenging scenarios where baseline methods diverge. Additionally, we demonstrate that the fine-grained geometry captured by BIEVR-LIO can be used for downstream tasks such as elevation mapping for robot locomotion.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

@@ -29,5 +29,6 @@
     "ko": "G-ICP로 추적하다가, 기하가 약하게 남긴 Hessian 방향에만 ORB feature 정보를 더하는 실시간 3DGS-SLAM tracker입니다."
   },
   "abstract": "Recent 3DGS-SLAM systems enable real-time operation by leveraging conventional feature matching or ICP-based tracking, thereby avoiding the heavy dense photometric optimization used in earlier approaches. However, feature matching remains prone to failure in textureless environments, while ICP-based tracking struggles in structureless or geometrically degenerate scenes due to ill-conditioned optimization. To address this issue, we propose Spectral GS-SLAM, an efficient yet robust tracking framework that integrates ICP with complementary feature-based constraints. Our method mitigates numerical instability by adaptively compensating under-constrained directions in degenerate scenarios, without interfering with the shared Gaussian representation used for mapping. We further introduce a Gaussian-aware planarity weighting mechanism that exploits the intrinsic covariance structure of 3D Gaussians to characterize scene geometry and guide information fusion. Extensive evaluations on challenging TUM RGB-D sequences demonstrate that Spectral GS-SLAM achieves real-time performance (40.14 FPS) while maintaining consistent tracking in both structureless and featureless environments. The proposed method preserves trajectory integrity in degenerate scenes while maintaining competitive performance in non-adverse conditions.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

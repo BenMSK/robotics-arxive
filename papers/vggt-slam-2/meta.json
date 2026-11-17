@@ -1,18 +1,35 @@
 {
   "id": "vggt-slam-2",
   "title": "VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction",
-  "authors": ["Dominic Maggio", "Luca Carlone"],
+  "authors": [
+    "Dominic Maggio",
+    "Luca Carlone"
+  ],
   "venue": "RSS 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["VisualSLAM", "FoundationModel", "FactorGraph", "PlaceRecognition", "Degeneracy", "Outliers"],
-  "links": { "arxiv": "https://arxiv.org/abs/2601.19887", "pdf": "https://arxiv.org/pdf/2601.19887", "code": "", "project": "", "official": "https://www.roboticsproceedings.org/rss22/p051.pdf" },
+  "tags": [
+    "VisualSLAM",
+    "FoundationModel",
+    "FactorGraph",
+    "PlaceRecognition",
+    "Degeneracy",
+    "Outliers"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2601.19887",
+    "pdf": "https://arxiv.org/pdf/2601.19887",
+    "code": "",
+    "project": "",
+    "official": "https://www.roboticsproceedings.org/rss22/p051.pdf"
+  },
   "tldr": {
     "en": "Dense SLAM from uncalibrated RGB by gluing VGGT submaps with a new factor graph; one VGGT attention layer verifies loop closures for free.",
     "ko": "보정 안 된 RGB 영상에서 VGGT submap을 새 factor graph로 이어 붙이는 dense SLAM입니다. VGGT의 attention layer 하나가 loop closure를 공짜로 검증합니다."
   },
   "abstract": "We present VGGT-SLAM 2.0, a real-time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT. Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics. Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures. Finally, we conduct a suite of experiments which includes showing VGGT-SLAM 2.0 can easily be adapted for open-set object detection and demonstrating real-time performance while running online onboard a ground robot using a Jetson Thor. We test in environments ranging from cluttered indoor apartments and office scenes to a 4,200 square foot barn, and we also demonstrate VGGT-SLAM 2.0 achieves the highest accuracy on the TUM dataset with about 23 percent less pose error than VGGT-SLAM. Code will be released upon publication.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

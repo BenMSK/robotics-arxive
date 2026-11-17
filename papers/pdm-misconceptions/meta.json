@@ -1,18 +1,35 @@
 {
   "id": "pdm-misconceptions",
   "title": "Parting with Misconceptions about Learning-based Vehicle Motion Planning",
-  "authors": ["Daniel Dauner", "Marcel Hallgarten", "Andreas Geiger", "Kashyap Chitta"],
+  "authors": [
+    "Daniel Dauner",
+    "Marcel Hallgarten",
+    "Andreas Geiger",
+    "Kashyap Chitta"
+  ],
   "venue": "CoRL 2023",
   "year": 2023,
   "track": "bible",
   "kind": "full",
   "mine": false,
-  "tags": ["MotionPlanning", "AutonomousDriving", "ImitationLearning", "Benchmark"],
-  "links": { "arxiv": "https://arxiv.org/abs/2306.07962", "pdf": "https://arxiv.org/pdf/2306.07962", "code": "https://github.com/autonomousvision/tuplan_garage", "project": "", "official": "" },
+  "tags": [
+    "MotionPlanning",
+    "AutonomousDriving",
+    "ImitationLearning",
+    "Benchmark"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2306.07962",
+    "pdf": "https://arxiv.org/pdf/2306.07962",
+    "code": "https://github.com/autonomousvision/tuplan_garage",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "On nuPlan, IDM plus 15 simulated-and-scored proposals beats every learned planner in closed loop, and open-loop forecast scores anti-correlate with driving.",
     "ko": "nuPlan에서 20년 된 규칙(IDM + 점수를 매긴 proposal 15개)이 closed-loop에서 모든 학습 planner를 이기고, open-loop 예측 점수는 실제 주행과 오히려 반대로 갑니다."
   },
   "abstract": "The release of nuPlan marks a new era in vehicle motion planning research, offering the first large-scale real-world dataset and evaluation schemes requiring both precise short-term planning and long-horizon ego-forecasting. Existing systems struggle to simultaneously meet both requirements. Indeed, we find that these tasks are fundamentally misaligned and should be addressed independently. We further assess the current state of closed-loop planning in the field, revealing the limitations of learning-based methods in complex real-world scenarios and the value of simple rule-based priors such as centerline selection through lane graph search algorithms. More surprisingly, for the open-loop sub-task, we observe that the best results are achieved when using only this centerline as scene context (i.e., ignoring all information regarding the map and other agents). Combining these insights, we propose an extremely simple and efficient planner which outperforms an extensive set of competitors, winning the nuPlan planning challenge 2023.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

@@ -1,18 +1,34 @@
 {
   "id": "vectorized-kinodynamic",
   "title": "Fast Asymptotically Optimal Kinodynamic Planning via Vectorization",
-  "authors": ["Yitian Gao", "Andrew Lu", "Zachary Kingston"],
+  "authors": [
+    "Yitian Gao",
+    "Andrew Lu",
+    "Zachary Kingston"
+  ],
   "venue": "IROS 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["MotionPlanning", "SamplingBased", "GPU", "Nonholonomic"],
-  "links": { "arxiv": "https://arxiv.org/abs/2607.03987", "pdf": "https://arxiv.org/pdf/2607.03987", "code": "https://github.com/CoMMALab/pakr", "project": "", "official": "" },
+  "tags": [
+    "MotionPlanning",
+    "SamplingBased",
+    "GPU",
+    "Nonholonomic"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2607.03987",
+    "pdf": "https://arxiv.org/pdf/2607.03987",
+    "code": "https://github.com/CoMMALab/pakr",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "A kinodynamic RRT in plain JAX runs as one GPU kernel; restarting it under a shrinking cost bound (AO-x) turns millisecond plans into near-optimal ones.",
     "ko": "순수 JAX로 짠 kinodynamic RRT가 GPU kernel 하나로 돌고, cost 상한을 줄여 가며 다시 푸는 AO-x로 ms 단위의 첫 해를 최적해 근처까지 끌어내립니다."
   },
   "abstract": "Sampling-based motion planners have been shown to be effective for systems with complex kinodynamic constraints and high dimensionality. However, these algorithms struggle to achieve real-time performance, leading to recent efforts to parallelize planning. While GPU-accelerated planners have achieved significant speedups, existing approaches require specialized CUDA programming that limits accessibility and portability. We present Parallel Asymptotically Optimal Kinodynamic RRT (PAKR), a massively parallel kinodynamic planner leveraging JAX and the XLA compiler to achieve GPU acceleration through standard Python tooling. By combining our parallel planner with the AO-x meta-algorithm, we achieve asymptotic optimality through fast iterative replanning. We provide a theoretical analysis of probabilistic completeness, analyze the effects of batch size and branching factor on convergence, and demonstrate scalability to complex dynamics using the MuJoCo-XLA simulator. Experiments show competitive runtimes with state-of-the-art GPU planners and superior solution quality.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

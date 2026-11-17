@@ -1,18 +1,39 @@
 {
   "id": "occupancy-aware-avp",
   "title": "Occupancy-Aware Trajectory Planning for Autonomous Valet Parking in Uncertain Dynamic Environments",
-  "authors": ["Farhad Nawaz", "Faizan M. Tariq", "Sangjae Bae", "David Isele", "Avinash Singh", "Nadia Figueroa", "Nikolai Matni", "Jovin D'sa"],
+  "authors": [
+    "Farhad Nawaz",
+    "Faizan M. Tariq",
+    "Sangjae Bae",
+    "David Isele",
+    "Avinash Singh",
+    "Nadia Figueroa",
+    "Nikolai Matni",
+    "Jovin D'sa"
+  ],
   "venue": "ICRA 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["Parking", "MotionPlanning", "Uncertainty", "AutonomousDriving"],
-  "links": { "arxiv": "https://arxiv.org/abs/2509.09206", "pdf": "https://arxiv.org/pdf/2509.09206", "code": "", "project": "https://sites.google.com/view/avp-hri/home", "official": "" },
+  "tags": [
+    "Parking",
+    "MotionPlanning",
+    "Uncertainty",
+    "AutonomousDriving"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2509.09206",
+    "pdf": "https://arxiv.org/pdf/2509.09206",
+    "code": "",
+    "project": "https://sites.google.com/view/avp-hri/home",
+    "official": ""
+  },
   "tldr": {
     "en": "A Bayes filter forecasts which spots will free up or fill within 5 s; the planner parks, waits briefly or explores, parking 26% faster than prior AVP methods.",
     "ko": "Bayes filter로 앞으로 5 s 동안 어느 칸이 비거나 찰지 예측하고, planner가 주차, 잠깐 대기, 탐색 중 하나를 고릅니다. 기존 AVP 방법보다 주차 시간이 26% 짧습니다."
   },
   "abstract": "Autonomous Valet Parking (AVP) requires planning under partial observability, where parking spot availability evolves as dynamic agents enter and exit spots. Existing approaches either rely only on instantaneous spot availability or make static assumptions, thereby limiting foresight and adaptability. We propose an approach that estimates probability of future spot occupancy by distinguishing initially vacant and occupied spots while leveraging nearby dynamic agent motion. We propose a probabilistic estimator that integrates partial, noisy observations from a limited Field-of-View, with the evolving uncertainty of unobserved spots. Coupled with the estimator, we design a strategy planner that balances goal-directed parking maneuvers with exploratory navigation based on information gain, and incorporates wait-and-go behaviors at promising spots. Through randomized simulations emulating large parking lots, we demonstrate that our framework significantly improves parking efficiency and trajectory smoothness over existing approaches, while maintaining safety margins. Simulation videos: https://sites.google.com/view/avp-hri/home.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

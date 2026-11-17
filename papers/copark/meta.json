@@ -1,18 +1,38 @@
 {
   "id": "copark",
   "title": "CoPark: Learning Reactive Parking via Self-Play",
-  "authors": ["Jiarong Wei", "Yanxing Chen", "Sinuo Song", "Yin Wu", "Anna Rehr", "Abhinav Valada"],
+  "authors": [
+    "Jiarong Wei",
+    "Yanxing Chen",
+    "Sinuo Song",
+    "Yin Wu",
+    "Anna Rehr",
+    "Abhinav Valada"
+  ],
   "venue": "CoRL 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["Parking", "ReinforcementLearning", "MultiRobot", "Nonholonomic", "Benchmark"],
-  "links": { "arxiv": "https://arxiv.org/abs/2606.04149", "pdf": "https://arxiv.org/pdf/2606.04149", "code": "", "project": "", "official": "https://openreview.net/forum?id=msKuD5tWYj" },
+  "tags": [
+    "Parking",
+    "ReinforcementLearning",
+    "MultiRobot",
+    "Nonholonomic",
+    "Benchmark"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2606.04149",
+    "pdf": "https://arxiv.org/pdf/2606.04149",
+    "code": "",
+    "project": "",
+    "official": "https://openreview.net/forum?id=msKuD5tWYj"
+  },
   "tldr": {
     "en": "Self-play RL on top of a Hybrid A* prior: steering stays on the plan, speed is freed to yield. 85% zero-shot success on DLP vs 51% for GigaFlow-style self-play.",
     "ko": "Hybrid A* prior 위에서 self-play RL을 합니다. 조향은 계획을 따르고 속도만 풀어 양보하게 합니다. DLP zero-shot 성공률 85%, GigaFlow식 self-play는 51%입니다."
   },
   "abstract": "Learning a single policy that reaches a goal with high geometric precision while interacting safely with nearby agents poses conflicting objectives. Precision favors commitment to a fixed geometric plan, whereas interaction requires immediate deviation when another agent intrudes, causing policies optimized for one objective to often fail at the other. We study this problem in the context of reactive autonomous parking, where multiple vehicles must reach assigned slots with sub-meter terminal accuracy while remaining responsive to neighboring vehicles throughout the maneuver. We propose CoPark, a multi-agent self-play RL approach built on a residual-policy architecture. A precomputed offline plan provides a fixed action prior, while a residual head learns the reactive corrections. The residual policy learns behaviors under self-play, where data and scripting fall short, while the fixed prior holds the slot-frame geometry that pure policies struggle to reach reliably. The key design is a partner-threat-modulated, channel-asymmetric release of the prior. A continuous threat signal shifts authority of the longitudinal channel to the residual head to enable yielding, while the lateral channel remains anchored to the precomputed reference to preserve sub-meter slot alignment. A closed-loop refinement layer corrects residual terminal error from action-grid discretization. We train our policy on six parking lots and evaluate zero-shot on our new reactive-parking benchmark spanning Dragon Lake Parking (DLP) and DeepScenario Open 3D (DSC3D). CoPark achieves ~70-85% success with only 3-6% collision rate, substantially outperforming classical, imitation-learning, and large-scale RL baselines. Importantly, the results demonstrate emergent interaction behaviors such as reverse-yielding, mid-maneuver yielding, tight-corridor passing, and queuing.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

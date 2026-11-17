@@ -1,18 +1,33 @@
 {
   "id": "slam-adversarial-lab",
   "title": "SLAM Adversarial Lab: An Extensible Framework for Visual SLAM Robustness Evaluation under Adverse Conditions",
-  "authors": ["Mohamed Hefny", "Karthik Dantu", "Steven Y. Ko"],
+  "authors": [
+    "Mohamed Hefny",
+    "Karthik Dantu",
+    "Steven Y. Ko"
+  ],
   "venue": "IROS 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["VisualSLAM", "RobustSLAM", "Benchmark"],
-  "links": { "arxiv": "https://arxiv.org/abs/2603.17165", "pdf": "https://arxiv.org/pdf/2603.17165", "code": "https://github.com/sfu-rsl/SLAMAdversarialLab", "project": "", "official": "" },
+  "tags": [
+    "VisualSLAM",
+    "RobustSLAM",
+    "Benchmark"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2603.17165",
+    "pdf": "https://arxiv.org/pdf/2603.17165",
+    "code": "https://github.com/sfu-rsl/SLAMAdversarialLab",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "Adds fog, rain, soiling, blur or frame drops in real-world units to existing datasets, runs seven visual SLAMs, and bisects for the severity where each fails.",
     "ko": "기존 데이터셋에 안개, 비, 렌즈 오염, 블러, 프레임 누락을 실제 단위로 입히고, visual SLAM이 실패하는 심각도를 이분 탐색으로 찾는 plug-in 프레임워크입니다."
   },
   "abstract": "We present SAL (SLAM Adversarial Lab), a modular framework for evaluating visual SLAM systems under adversarial conditions such as fog and rain. SAL represents each adversarial condition as a perturbation that transforms an existing dataset into an adversarial dataset. When transforming a dataset, SAL supports severity levels using easily-interpretable real-world units such as meters for fog visibility. SAL's extensible architecture decouples datasets, perturbations, and SLAM algorithms through common interfaces, so users can add new components without rewriting integration code. Moreover, SAL includes a search procedure that finds the severity level of a perturbation at which a SLAM system fails. To showcase the capabilities of SAL, our evaluation integrates seven SLAM algorithms and evaluates them across three datasets under weather, camera, and video transport perturbations.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

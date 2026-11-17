@@ -21,6 +21,8 @@ Language, read marks and nothing else are kept in the browser (`localStorage`, k
   entries have no open full text (no arXiv), so they show the abstract, its Korean translation and an official link.
 - **Bible**: classics in SLAM, planning and AI + robotics, with a "why it is a classic" line.
 - **Venues**: the conferences and journals worth following, with typical months and deadlines.
+- **Log**: dated notes on each update (`log.en.md`, `log.ko.md`: what was scanned, added and left out) followed by
+  every paper grouped by its `added` date.
 
 ## Add a paper
 
@@ -28,7 +30,8 @@ Language, read marks and nothing else are kept in the browser (`localStorage`, k
    crop figures with `python -P tools/fig.py auto|clip`, write `meta.json`, `en.md`, `ko.md`).
 2. `python -P tools/build.py` (checks every entry, writes `papers.json`; must print 0 errors).
 3. Preview: `python -m http.server` in this folder, open http://localhost:8000.
-4. Commit and push; Pages redeploys in about a minute.
+4. Add a dated section to `log.en.md` and `log.ko.md` (what was added, anything left out).
+5. Commit and push; Pages redeploys in about a minute.
 
 ## What is inside (2026-11-17)
 

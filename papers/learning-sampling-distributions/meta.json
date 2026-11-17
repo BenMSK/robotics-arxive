@@ -1,18 +1,33 @@
 {
   "id": "learning-sampling-distributions",
   "title": "Learning Sampling Distributions for Robot Motion Planning",
-  "authors": ["Brian Ichter", "James Harrison", "Marco Pavone"],
+  "authors": [
+    "Brian Ichter",
+    "James Harrison",
+    "Marco Pavone"
+  ],
   "venue": "ICRA 2018",
   "year": 2018,
   "track": "bible",
   "kind": "full",
   "mine": false,
-  "tags": ["MotionPlanning", "SamplingBased", "LearnedSampling"],
-  "links": { "arxiv": "https://arxiv.org/abs/1709.05448", "pdf": "https://arxiv.org/pdf/1709.05448", "code": "https://github.com/StanfordASL/LearnedSamplingDistributions", "project": "", "official": "" },
+  "tags": [
+    "MotionPlanning",
+    "SamplingBased",
+    "LearnedSampling"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/1709.05448",
+    "pdf": "https://arxiv.org/pdf/1709.05448",
+    "code": "https://github.com/StanfordASL/LearnedSamplingDistributions",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "A CVAE learns where good solutions lie and proposes half the samples for PRM*/FMT*/RRT*; uniform samples fill the rest, so the guarantees survive. ~10x faster.",
     "ko": "CVAE가 좋은 해가 있을 법한 곳을 배워 PRM*/FMT*/RRT*의 sample 절반을 제안하고, 나머지는 uniform sample로 채워 이론적 보장을 지킵니다. 약 10배 빠릅니다."
   },
   "abstract": "A defining feature of sampling-based motion planning is the reliance on an implicit representation of the state space, which is enabled by a set of probing samples. Traditionally, these samples are drawn either probabilistically or deterministically to uniformly cover the state space. Yet, the motion of many robotic systems is often restricted to \"small\" regions of the state space, due to, for example, differential constraints or collision-avoidance constraints. To accelerate the planning process, it is thus desirable to devise non-uniform sampling strategies that favor sampling in those regions where an optimal solution might lie. This paper proposes a methodology for non-uniform sampling, whereby a sampling distribution is learned from demonstrations, and then used to bias sampling. The sampling distribution is computed through a conditional variational autoencoder, allowing sample generation from the latent space conditioned on the specific planning problem. This methodology is general, can be used in combination with any sampling-based planner, and can effectively exploit the underlying structure of a planning problem while maintaining the theoretical guarantees of sampling-based approaches. Specifically, on several planning problems, the proposed methodology is shown to effectively learn representations for the relevant regions of the state space, resulting in an order of magnitude improvement in terms of success rate and convergence to the optimal cost.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

@@ -1,18 +1,38 @@
 {
   "id": "consistencyplanner",
   "title": "ConsistencyPlanner: Real-Time Planning with Fast-Sampling Consistency Models",
-  "authors": ["Qichao Zhang", "Xing Fang", "Jiaqi Fang", "Zhenwen Cai", "Jie Ling", "Qiankun Yu", "Dongbin Zhao"],
+  "authors": [
+    "Qichao Zhang",
+    "Xing Fang",
+    "Jiaqi Fang",
+    "Zhenwen Cai",
+    "Jie Ling",
+    "Qiankun Yu",
+    "Dongbin Zhao"
+  ],
   "venue": "ICRA 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["Diffusion", "MotionPlanning", "ImitationLearning", "AutonomousDriving"],
-  "links": { "arxiv": "https://arxiv.org/abs/2606.11569", "pdf": "https://arxiv.org/pdf/2606.11569", "code": "", "project": "", "official": "" },
+  "tags": [
+    "Diffusion",
+    "MotionPlanning",
+    "ImitationLearning",
+    "AutonomousDriving"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2606.11569",
+    "pdf": "https://arxiv.org/pdf/2606.11569",
+    "code": "",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "Swaps a diffusion planner's 10-step sampler for a one-step consistency model: same Waymax safety (2.77% collisions) at 15 ms instead of 122 ms.",
     "ko": "Diffusion planner의 10-step sampler를 1-step consistency model로 바꿔, Waymax에서 같은 안전 성능(충돌률 2.77%)을 122 ms 대신 15 ms에 냅니다."
   },
   "abstract": "Closed-loop planning in complex, real-world driving scenarios presents a critical challenge for autonomous driving systems. While traditional rule-based methods are interpretable, their predefined heuristics lack the adaptability for dynamic traffic environments. Learning-based approaches have shown considerable promise. Conversely, learning-based approaches, despite their promise, struggle to balance the modeling diverse and multimodal driving behaviors and real-time planning, often leading to indecisive or unsafe actions. To address this limitation, we propose ConsistencyPlanner, a real-time planning framework with fast-sampling consistency models. Our approach is built upon two key technical contributions. Efficient Multimodal Sampling: We employ fast-sampling consistency models to generate a diverse set of plausible future trajectories. This enables efficient, real-time exploration of multimodal actions, overcoming the computational bottlenecks of previous iterative generative methods. Heterogeneous Feature Fusion: We introduce an attention-enhanced decoder that dynamically integrates heterogeneous input features—including scene feature and action token—into a cohesive representation for robust planning. Extensive evaluation in the Waymax simulator demonstrates superior performance in safety metrics compared to existing methods, with particularly strong results in challenging dynamic scenarios.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

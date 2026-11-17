@@ -1,18 +1,35 @@
 {
   "id": "bridgeflow",
   "title": "BridgeFlow: Fast and Robust SE(2)-Equivariant Motion Planning with Flow Matching",
-  "authors": ["Xinzhe Zhou", "Xuyang Wang", "Xiaoming Duan", "Jianping He"],
+  "authors": [
+    "Xinzhe Zhou",
+    "Xuyang Wang",
+    "Xiaoming Duan",
+    "Jianping He"
+  ],
   "venue": "IROS 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["MotionPlanning", "FlowMatching", "Diffusion", "Manipulation"],
-  "links": { "arxiv": "https://arxiv.org/abs/2607.14725", "pdf": "https://arxiv.org/pdf/2607.14725", "code": "", "project": "", "official": "" },
+  "tags": [
+    "MotionPlanning",
+    "FlowMatching",
+    "Diffusion",
+    "Manipulation"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2607.14725",
+    "pdf": "https://arxiv.org/pdf/2607.14725",
+    "code": "",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "Flow-matching planner that always plans in a start-to-goal frame, so it is exactly SE(2)-equivariant; a noisy straight-line prior gives valid paths in 2 steps.",
     "ko": "항상 start에서 goal을 향한 좌표계에서 planning해서 정확히 SE(2)-equivariant한 flow matching planner입니다. Noise 섞인 직선 prior 덕분에 2 step으로 유효한 경로를 냅니다."
   },
   "abstract": "In robotic motion planning, equivariance to rigid body transformations is crucial for robust spatial generalization. However, current learning-based planners face a critical dilemma: they either lack inherent equivariance, treating transformed tasks as novel scenarios, or enforce it via computationally expensive specialized architectures that bottleneck real-time inference. To break this trade-off, we propose BridgeFlow, a fast and strictly SE(2)-equivariant generative motion planning framework. Rather than relying on heavy equivariant networks, BridgeFlow achieves exact spatial equivariance via a lightweight task-centric canonicalization module, enabling generalization using standard architectures. To further accelerate inference, we pair a Brownian bridge informative prior with context-aware mini-batch optimal transport. This constructs a straightened vector field that minimizes transport costs and stabilizes training. Furthermore, environmental awareness is explicitly embedded via Classifier-Free Guidance. Evaluations in dense 2D environments and on a 7-DoF Franka manipulator demonstrate that BridgeFlow achieves up to a 15× inference speedup and a 2× higher valid trajectory rate over state-of-the-art diffusion baselines, alongside robust generalization to entirely unseen environments and arbitrary spatial transformations.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

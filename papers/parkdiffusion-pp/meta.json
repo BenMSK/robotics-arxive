@@ -1,18 +1,35 @@
 {
   "id": "parkdiffusion-pp",
   "title": "ParkDiffusion++: Ego Intention Conditioned Joint Trajectory Prediction for Automated Parking Using Diffusion Models",
-  "authors": ["Jiarong Wei", "Anna Rehr", "Christian Feist", "Abhinav Valada"],
+  "authors": [
+    "Jiarong Wei",
+    "Anna Rehr",
+    "Christian Feist",
+    "Abhinav Valada"
+  ],
   "venue": "ICRA 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["Parking", "Prediction", "Diffusion", "AutonomousDriving"],
-  "links": { "arxiv": "https://arxiv.org/abs/2602.20923", "pdf": "https://arxiv.org/pdf/2602.20923", "code": "", "project": "", "official": "" },
+  "tags": [
+    "Parking",
+    "Prediction",
+    "Diffusion",
+    "AutonomousDriving"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2602.20923",
+    "pdf": "https://arxiv.org/pdf/2602.20923",
+    "code": "",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "Proposes 6 possible ego goals in a parking lot and predicts how nearby cars and pedestrians react to each: a what-if predictor that leads most DLP metrics.",
     "ko": "주차장에서 ego가 갈 만한 목표 6개를 제안하고, 목표마다 주변 차와 보행자가 어떻게 반응할지 함께 예측합니다. DLP 지표 대부분에서 가장 좋은 what-if 예측기입니다."
   },
   "abstract": "Automated parking is a challenging operational domain for advanced driver assistance systems, requiring robust scene understanding and interaction reasoning. The key challenge is twofold: (i)predict multiple plausible ego intentions according to context and (ii)for each intention, predict the joint responses of surrounding agents, enabling effective what-if decision-making. However, existing methods often fall short, typically treating these interdependent problems in isolation. We propose ParkDiffusion++, which jointly learns a multi-modal ego intention predictor and an ego-conditioned multi-agent joint trajectory predictor for automated parking. Our approach makes four key contributions. First, we introduce an ego intention tokenizer that predicts a small set of discrete endpoint intentions from agent histories and vectorized map polylines. Second, we perform ego intention-conditioned joint prediction, yielding socially consistent predictions of the surrounding agents for each possible ego intention. Third, we employ a lightweight safety-guided denoiser with different constraints to refine joint scenes during training, thus improving accuracy and safety. Fourth, we propose counterfactual knowledge distillation, where an EMA teacher refined by a frozen safety-guided denoiser provides pseudo-targets that capture how agents react to alternative ego intentions. Extensive evaluations demonstrate that ParkDiffusion++ achieves state-of-the-art performance on the Dragon Lake Parking (DLP) dataset and the Intersections Drone (inD) dataset. Importantly, qualitative what-if visualizations show other agents react appropriately to different ego intentions.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

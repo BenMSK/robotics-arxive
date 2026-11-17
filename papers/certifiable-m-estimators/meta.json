@@ -1,18 +1,36 @@
 {
   "id": "certifiable-m-estimators",
   "title": "Implementing Robust M-Estimators with Certifiable Factor Graph Optimization",
-  "authors": ["Zhexin Xu", "Hanna Jiamei Zhang", "Helena Calatrava", "Pau Closas", "David M. Rosen"],
+  "authors": [
+    "Zhexin Xu",
+    "Hanna Jiamei Zhang",
+    "Helena Calatrava",
+    "Pau Closas",
+    "David M. Rosen"
+  ],
   "venue": "ICRA 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["RobustSLAM", "Certifiable", "Outliers", "FactorGraph"],
-  "links": { "arxiv": "https://arxiv.org/abs/2603.20932", "pdf": "https://arxiv.org/pdf/2603.20932", "code": "https://github.com/NEU-RAL/Certi-GNC", "project": "", "official": "" },
+  "tags": [
+    "RobustSLAM",
+    "Certifiable",
+    "Outliers",
+    "FactorGraph"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2603.20932",
+    "pdf": "https://arxiv.org/pdf/2603.20932",
+    "code": "https://github.com/NEU-RAL/Certi-GNC",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "GNC robust estimation where every inner least-squares solve is certified globally optimal, built from GTSAM factors; beats local GNC on outlier-heavy SLAM.",
     "ko": "GNC robust estimation의 매 내부 least squares 풀이에 전역 최적 증명서를 붙입니다. GTSAM factor만으로 구현하며, outlier가 많은 SLAM에서 local GNC보다 정확합니다."
   },
   "abstract": "Parameter estimation in robotics and computer vision faces formidable challenges from both outlier contamination and nonconvex optimization landscapes. While M-estimation addresses the problem of outliers through robust loss functions, it creates severely nonconvex problems that are difficult to solve globally. Adaptive reweighting schemes provide one particularly appealing strategy for implementing M-estimation in practice: these methods solve a sequence of simpler weighted least squares (WLS) subproblems, enabling both the use of standard least squares solvers and the recovery of higher-quality estimates than simple local search. However, adaptive reweighting still crucially relies upon solving the inner WLS problems effectively, a task that remains challenging in many robotics applications due to the intrinsic nonconvexity of many common parameter spaces (e.g. rotations and poses). In this paper, we show how one can easily implement adaptively-reweighted M-estimators with certifiably correct solvers for the inner WLS subproblems using only fast local optimization over smooth manifolds. Our approach exploits recent work on certifiable factor graph optimization to provide global optimality certificates for the inner WLS subproblems while seamlessly integrating into existing factor graph-based software libraries and workflows. Experimental evaluation on pose-graph optimization and landmark SLAM tasks demonstrates that our adaptively reweighted certifiable estimation approach provides higher-quality estimates than alternative local search-based methods, while scaling tractably to realistic problem sizes.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

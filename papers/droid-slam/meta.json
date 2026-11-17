@@ -1,18 +1,32 @@
 {
   "id": "droid-slam",
   "title": "DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D Cameras",
-  "authors": ["Zachary Teed", "Jia Deng"],
+  "authors": [
+    "Zachary Teed",
+    "Jia Deng"
+  ],
   "venue": "NeurIPS 2021",
   "year": 2021,
   "track": "bible",
   "kind": "full",
   "mine": false,
-  "tags": ["VisualSLAM", "RobustSLAM", "GPU"],
-  "links": { "arxiv": "https://arxiv.org/abs/2108.10869", "pdf": "https://arxiv.org/pdf/2108.10869", "code": "https://github.com/princeton-vl/DROID-SLAM", "project": "", "official": "" },
+  "tags": [
+    "VisualSLAM",
+    "RobustSLAM",
+    "GPU"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2108.10869",
+    "pdf": "https://arxiv.org/pdf/2108.10869",
+    "code": "https://github.com/princeton-vl/DROID-SLAM",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "A network proposes dense flow corrections and confidences; differentiable bundle adjustment turns them into poses and depth. Synthetic-trained, beats ORB-SLAM3.",
     "ko": "Network가 dense flow 보정값과 confidence를 내고, 미분 가능한 dense bundle adjustment가 이를 pose와 depth로 바꿉니다. 합성 데이터로만 학습해 ORB-SLAM3를 넘습니다."
   },
   "abstract": "We introduce DROID-SLAM, a new deep learning based SLAM system. DROID-SLAM consists of recurrent iterative updates of camera pose and pixelwise depth through a Dense Bundle Adjustment layer. DROID-SLAM is accurate, achieving large improvements over prior work, and robust, suffering from substantially fewer catastrophic failures. Despite training on monocular video, it can leverage stereo or RGB-D video to achieve improved performance at test time. The URL to our open source code is https://github.com/princeton-vl/DROID-SLAM.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

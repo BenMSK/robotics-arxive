@@ -1,18 +1,43 @@
 {
   "id": "data-scaling-laws-e2e",
   "title": "Data Scaling Laws for Imitation Learning-Based End-To-End Autonomous Driving",
-  "authors": ["Yupeng Zheng", "Pengxuan Yang", "Zhongpu Xia", "Qichao Zhang", "Yuhang Zheng", "Songen Gu", "Bu Jin", "Teng Zhang", "Ben Lu", "Chao Han", "Xianpeng Lang", "Dongbin Zhao"],
+  "authors": [
+    "Yupeng Zheng",
+    "Pengxuan Yang",
+    "Zhongpu Xia",
+    "Qichao Zhang",
+    "Yuhang Zheng",
+    "Songen Gu",
+    "Bu Jin",
+    "Teng Zhang",
+    "Ben Lu",
+    "Chao Han",
+    "Xianpeng Lang",
+    "Dongbin Zhao"
+  ],
   "venue": "ICRA 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["EndToEndDriving", "ImitationLearning", "Dataset", "AutonomousDriving"],
-  "links": { "arxiv": "https://arxiv.org/abs/2412.02689", "pdf": "https://arxiv.org/pdf/2412.02689", "code": "", "project": "", "official": "" },
+  "tags": [
+    "EndToEndDriving",
+    "ImitationLearning",
+    "Dataset",
+    "AutonomousDriving"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2412.02689",
+    "pdf": "https://arxiv.org/pdf/2412.02689",
+    "code": "",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "With 4M real demos, open-loop error follows a power law but closed-loop driving does not; adding data for weak scenarios beats adding raw volume.",
     "ko": "실제 시연 400만 개로 보니 open-loop 오차는 power law를 따르지만 closed-loop 주행은 그렇지 않고, 약한 시나리오 데이터만 골라 늘리는 편이 훨씬 효율적입니다."
   },
   "abstract": "The end-to-end autonomous driving paradigm has recently attracted lots of attention due to its scalability. However, existing methods are constrained by the limited scale of real-world data, which hinders a comprehensive exploration of the scaling laws associated with end-to-end autonomous driving. To address this issue, we collected substantial data from various driving scenarios and behaviors and conducted an extensive study on the scaling laws of existing imitation learning-based end-to-end autonomous driving paradigms. Specifically, approximately 4 million demonstrations from 23 different scenario types were gathered, amounting to over 30,000 hours of driving demonstrations. We performed open-loop evaluations and closed-loop simulation evaluations in 1,400 diverse driving demonstrations (1,300 for open-loop and 100 for closed-loop) under stringent assessment conditions. Through experimental analysis, we discovered that (1) the performance of the driving model exhibits a power-law relationship with the amount of data, but this is not the case in closed-loop evaluation. The inconsistency between the two assessments shifts our focus toward the distribution of data rather than merely expanding its volume. (2) a small increase in the quantity of long-tailed data can significantly improve the performance for the corresponding scenarios; (3) appropriate scaling of data enables the model to achieve combinatorial generalization in novel scenes and actions. Our results highlight the critical role of data scaling in improving the generalizability of models across diverse autonomous driving scenarios, assuring safe deployment in the real world.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

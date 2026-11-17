@@ -1,18 +1,56 @@
 {
   "id": "pi0",
   "title": "π0: A Vision-Language-Action Flow Model for General Robot Control",
-  "authors": ["Kevin Black", "Noah Brown", "Danny Driess", "Adnan Esmail", "Michael Equi", "Chelsea Finn", "Niccolo Fusai", "Lachy Groom", "Karol Hausman", "Brian Ichter", "Szymon Jakubczak", "Tim Jones", "Liyiming Ke", "Sergey Levine", "Adrian Li-Bell", "Mohith Mothukuri", "Suraj Nair", "Karl Pertsch", "Lucy Xiaoyang Shi", "James Tanner", "Quan Vuong", "Anna Walling", "Haohuan Wang", "Ury Zhilinsky"],
+  "authors": [
+    "Kevin Black",
+    "Noah Brown",
+    "Danny Driess",
+    "Adnan Esmail",
+    "Michael Equi",
+    "Chelsea Finn",
+    "Niccolo Fusai",
+    "Lachy Groom",
+    "Karol Hausman",
+    "Brian Ichter",
+    "Szymon Jakubczak",
+    "Tim Jones",
+    "Liyiming Ke",
+    "Sergey Levine",
+    "Adrian Li-Bell",
+    "Mohith Mothukuri",
+    "Suraj Nair",
+    "Karl Pertsch",
+    "Lucy Xiaoyang Shi",
+    "James Tanner",
+    "Quan Vuong",
+    "Anna Walling",
+    "Haohuan Wang",
+    "Ury Zhilinsky"
+  ],
   "venue": "RSS 2025",
   "year": 2025,
   "track": "bible",
   "kind": "full",
   "mine": false,
-  "tags": ["VLA", "FlowMatching", "FoundationModel", "Manipulation", "ImitationLearning"],
-  "links": { "arxiv": "https://arxiv.org/abs/2410.24164", "pdf": "https://arxiv.org/pdf/2410.24164", "code": "https://github.com/Physical-Intelligence/openpi", "project": "https://physicalintelligence.company/blog/pi0", "official": "https://www.roboticsproceedings.org/rss21/p010.html" },
+  "tags": [
+    "VLA",
+    "FlowMatching",
+    "FoundationModel",
+    "Manipulation",
+    "ImitationLearning"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2410.24164",
+    "pdf": "https://arxiv.org/pdf/2410.24164",
+    "code": "https://github.com/Physical-Intelligence/openpi",
+    "project": "https://physicalintelligence.company/blog/pi0",
+    "official": "https://www.roboticsproceedings.org/rss21/p010.html"
+  },
   "tldr": {
     "en": "A 3.3B vision-language-action model: a pretrained VLM plus a flow-matching action expert that outputs 50-step action chunks, trained on 10,000 h of robot data.",
     "ko": "사전 학습된 VLM에 flow matching action expert를 붙여 50-step action chunk를 내는 3.3B VLA입니다. 10,000시간의 로봇 데이터로 학습했습니다."
   },
   "abstract": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we discuss how generalist robot policies (i.e., robot foundation models) can address these challenges, and how we can design effective generalist robot policies for complex and highly dexterous tasks. We propose a novel flow matching architecture built on top of a pre-trained vision-language model (VLM) to inherit Internet-scale semantic knowledge. We then discuss how this model can be trained on a large and diverse dataset from multiple dexterous robot platforms, including single-arm robots, dual-arm robots, and mobile manipulators. We evaluate our model in terms of its ability to perform tasks via direct prompting, follow language instructions from people and from a high-level VLM policy, and its ability to acquire new skills via fine-tuning. Our results cover a wide variety of tasks, such as laundry folding, table cleaning, and assembling boxes.",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }

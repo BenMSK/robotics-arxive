@@ -101,6 +101,7 @@ article th, article td { border: 1px solid var(--line); padding: 6px 9px; text-a
 article section.lens { background: var(--lens); border-left: 4px solid var(--lens-line); border-radius: 12px;
   padding: 2px 16px 4px; margin: 30px -4px 10px; }
 article section.lens h2 { margin-top: 16px; color: var(--lens-line); }
+article .muted { color: var(--muted); font-size: 13.5px; }
 .note { font-size: 14px; color: var(--muted); background: var(--card); border: 1px dashed var(--line); border-radius: 12px; padding: 12px 14px; }
 
 .venues h2 { font-size: 18px; margin: 22px 0 6px; }
@@ -131,13 +132,13 @@ footer { color: var(--muted); font-size: 12.5px; padding: 18px 0 8px; border-top
 
 <script>
 const T = {
-  en: { tab2026: '2026 papers', bible: 'Bible', venues: 'Venues', search: 'Search title, author, #tag…',
+  en: { tab2026: '2026 papers', bible: 'Bible', venues: 'Venues', log: 'Log', addedOn: (d, n) => `${d} · ${n} papers added`, search: 'Search title, author, #tag…',
         all: 'All', full: 'Write-up', abs: 'Abstract only', mine: 'Mine', read: 'Read', papers: n => `${n} papers`,
         back: '← Back', markRead: 'Mark as read', isRead: '✓ Read', abstract: 'Abstract', original: 'Show original',
         absNote: 'The full text is not openly available (no arXiv version), so only the abstract is shown.',
         none: 'No papers match.', venuesTitle: 'What to follow', authorsMore: n => ` +${n} more`,
         cov: 'Coverage: ICRA 2026 full program (2,761 papers) · RSS 2026 (210) · CoRL 2026 (687 titles) · IROS 2026 papers tagged "IROS 2026" on arXiv (the official program is behind a bot check). Selected for robust SLAM, AI-applied motion planning and parking.' },
-  ko: { tab2026: '2026 논문', bible: 'Bible', venues: '학회·저널', search: '제목, 저자, #tag 검색…',
+  ko: { tab2026: '2026 논문', bible: 'Bible', venues: '학회·저널', log: '기록', addedOn: (d, n) => `${d} · 논문 ${n}편 추가`, search: '제목, 저자, #tag 검색…',
         all: '전체', full: '해설', abs: 'Abstract만', mine: '내 논문', read: '읽음', papers: n => `논문 ${n}편`,
         back: '← 목록', markRead: '읽음 표시', isRead: '✓ 읽음', abstract: 'Abstract', original: '원문 보기',
         absNote: '본문이 공개되어 있지 않아(arXiv 버전 없음) abstract만 실었습니다.',
@@ -204,7 +205,7 @@ document.querySelectorAll('.lang button').forEach(b => b.onclick = () => setLang
 
 function tabs(active) {
   const t = T[lang];
-  document.getElementById('tabs').innerHTML = [['#/', t.tab2026, 'list'], ['#/bible', t.bible, 'bible'], ['#/venues', t.venues, 'venues']]
+  document.getElementById('tabs').innerHTML = [['#/', t.tab2026, 'list'], ['#/bible', t.bible, 'bible'], ['#/venues', t.venues, 'venues'], ['#/log', t.log, 'log']]
     .map(([h, label, k]) => `<a href="${h}" class="${k === active ? 'on' : ''}">${label}</a>`).join('');
 }
 
@@ -331,6 +332,19 @@ function venues() {
     `<footer>${lang === 'ko' ? '날짜는 예년 기준입니다. 매년 call for papers를 확인하세요.' : 'Months are typical; check each year\'s call for papers.'}</footer></div>`;
 }
 
+async function logView() {
+  // hand-written notes (log.<lang>.md) + every paper grouped by its "added" date
+  tabs('log');
+  const t = T[lang];
+  let md = '';
+  try { const r = await fetch(`log.${lang}.md`); if (r.ok) md = await r.text(); } catch {}
+  const byDate = {};
+  papers.forEach(p => (byDate[p.added || '?'] ||= []).push(p));
+  const lists = Object.keys(byDate).sort().reverse().map(d => `<h2>${t.addedOn(d, byDate[d].length)}</h2><ul>` +
+    byDate[d].map(p => `<li><a href="#/p/${p.id}">${esc(p.title)}</a> <span class="muted">${esc(p.venue)}${p.kind === 'abstract' ? ' · ' + t.abs : ''}</span></li>`).join('') + '</ul>').join('');
+  app.innerHTML = `<article lang="${lang}"><h1 style="font:700 22px/1.3 var(--serif);margin:6px 0 2px">${t.log}</h1>${marked.parse(md)}${lists}</article>`;
+}
+
 function route() {
   const h = location.hash.slice(1) || '/';
   let m;
@@ -338,11 +352,12 @@ function route() {
   if ((m = h.match(/^\/p\/([\w.+-]+)/))) return detail(m[1]);
   if ((m = h.match(/^\/tag\/(\w+)\/(\w+)/))) { state.tag = m[2]; state.venue = ''; location.replace(m[1] === 'bible' ? '#/bible' : '#/'); return; }
   if (h.startsWith('/venues')) return venues();
+  if (h.startsWith('/log')) return logView();
   const track = h.startsWith('/bible') ? 'bible' : '2026';
   list(track);
   requestAnimationFrame(() => window.scrollTo(0, scrollMemo[track] || 0));
 }
-addEventListener('scroll', () => { const h = location.hash; if (!h.includes('/p/') && !h.includes('/venues')) scrollMemo[h.includes('bible') ? 'bible' : '2026'] = scrollY; }, { passive: true });
+addEventListener('scroll', () => { const h = location.hash; if (!h.includes('/p/') && !h.includes('/venues') && !h.includes('/log')) scrollMemo[h.includes('bible') ? 'bible' : '2026'] = scrollY; }, { passive: true });
 addEventListener('hashchange', route);
 
 fetch('papers.json').then(r => r.json()).then(d => { papers = d; setLang(lang); })

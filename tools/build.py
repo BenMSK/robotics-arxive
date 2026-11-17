@@ -25,6 +25,7 @@ for mp in sorted(glob.glob('papers/*/meta.json')):
         if not str(m.get(k, '')).strip(): err(f'missing {k}')
     if not m.get('authors'): err('missing authors')
     if not isinstance(m.get('year'), int): err('year must be an int')
+    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(m.get('added', ''))): err('added must be YYYY-MM-DD (the day the entry was added)')
     if m.get('track') not in ('2026', 'bible'): err('track must be "2026" or "bible"')
     if m.get('kind') not in ('full', 'abstract'): err('kind must be "full" or "abstract"')
     for lang in ('en', 'ko'):

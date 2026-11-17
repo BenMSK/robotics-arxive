@@ -1,18 +1,35 @@
 {
   "id": "formal-safety-generative",
   "title": "Formal Safety Verification and Refinement for Generative Motion Planners Via Certified Local Stabilization",
-  "authors": ["Devesh Nath", "Haoran Yin", "Glen Chou"],
+  "authors": [
+    "Devesh Nath",
+    "Haoran Yin",
+    "Glen Chou"
+  ],
   "venue": "ICRA 2026",
   "year": 2026,
   "track": "2026",
   "kind": "full",
   "mine": false,
-  "tags": ["Safety", "Certifiable", "Diffusion", "FlowMatching", "MotionPlanning"],
-  "links": { "arxiv": "https://arxiv.org/abs/2509.19688", "pdf": "https://arxiv.org/pdf/2509.19688", "code": "", "project": "", "official": "" },
+  "tags": [
+    "Safety",
+    "Certifiable",
+    "Diffusion",
+    "FlowMatching",
+    "MotionPlanning"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2509.19688",
+    "pdf": "https://arxiv.org/pdf/2509.19688",
+    "code": "",
+    "project": "",
+    "official": ""
+  },
   "tldr": {
     "en": "Don't verify the huge diffusion planner: verify a tiny controller tracking its plans, and keep a library of plans certified safe from a set of start states.",
     "ko": "거대한 diffusion planner 대신, 그 plan을 따라가는 작은 tracking controller를 검증하고 시작 상태 집합 전체에서 안전이 증명된 plan 라이브러리를 씁니다."
   },
   "abstract": "We present a method for formal safety verification of learning-based generative motion planners. Generative motion planners (GMPs) offer advantages over traditional planners, but verifying the safety and dynamic feasibility of their outputs is difficult since neural network verification (NNV) tools scale only to a few hundred neurons, while GMPs often contain millions. To preserve GMP expressiveness while enabling verification, our key insight is to imitate the GMP by stabilizing references sampled from the GMP with a small neural tracking controller and then applying NNV to the closed-loop dynamics. This yields reachable sets that rigorously certify closed-loop safety, while the controller enforces dynamic feasibility. Building on this, we construct a library of verified GMP references and deploy them online in a way that imitates the original GMP distribution whenever it is safe to do so, improving safety without retraining. We evaluate across diverse planners, including diffusion, flow matching, and vision-language models, improving safety in simulation (on ground robots and quadcopters) and on hardware (differential-drive robot).",
-  "abstract_ko": ""
+  "abstract_ko": "",
+  "added": "2026-11-17"
 }
