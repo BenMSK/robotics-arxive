@@ -1,0 +1,18 @@
+{
+  "id": "orb-slam3",
+  "title": "ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM",
+  "authors": ["Carlos Campos", "Richard Elvira", "Juan J. Gómez Rodríguez", "José M. M. Montiel", "Juan D. Tardós"],
+  "venue": "T-RO 2021",
+  "year": 2021,
+  "track": "bible",
+  "kind": "full",
+  "mine": false,
+  "tags": ["VisualSLAM", "VIO", "PlaceRecognition", "RobustSLAM"],
+  "links": { "arxiv": "https://arxiv.org/abs/2007.11898", "pdf": "https://arxiv.org/pdf/2007.11898", "code": "https://github.com/UZ-SLAMLab/ORB_SLAM3", "project": "", "official": "" },
+  "tldr": {
+    "en": "Feature-based visual and visual-inertial SLAM for mono, stereo, RGB-D and fisheye cameras, with fast MAP IMU initialization and a multi-map Atlas.",
+    "ko": "Mono, stereo, RGB-D, fisheye 카메라를 지원하는 feature 기반 visual / visual-inertial SLAM으로, 빠른 MAP IMU 초기화와 여러 session을 합치는 multi-map Atlas가 핵심입니다."
+  },
+  "abstract": "This paper presents ORB-SLAM3, the first system able to perform visual, visual-inertial and multi-map SLAM with monocular, stereo and RGB-D cameras, using pin-hole and fisheye lens models. The first main novelty is a feature-based tightly-integrated visual-inertial SLAM system that fully relies on Maximum-a-Posteriori (MAP) estimation, even during the IMU initialization phase. The result is a system that operates robustly in real time, in small and large, indoor and outdoor environments, and is two to ten times more accurate than previous approaches. The second main novelty is a multiple map system that relies on a new place recognition method with improved recall. Thanks to it, ORB-SLAM3 is able to survive to long periods of poor visual information: when it gets lost, it starts a new map that will be seamlessly merged with previous maps when revisiting mapped areas. Compared with visual odometry systems that only use information from the last few seconds, ORB-SLAM3 is the first system able to reuse in all the algorithm stages all previous information. This allows to include in bundle adjustment co-visible keyframes, that provide high parallax observations boosting accuracy, even if they are widely separated in time or if they come from a previous mapping session. Our experiments show that, in all sensor configurations, ORB-SLAM3 is as robust as the best systems available in the literature, and significantly more accurate. Notably, our stereo-inertial SLAM achieves an average accuracy of 3.5 cm in the EuRoC drone and 9 mm under quick hand-held motions in the room of TUM-VI dataset, a setting representative of AR/VR scenarios. For the benefit of the community we make public the source code.",
+  "abstract_ko": ""
+}

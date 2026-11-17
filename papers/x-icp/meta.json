@@ -1,0 +1,18 @@
+{
+  "id": "x-icp",
+  "title": "X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments",
+  "authors": ["Turcan Tuna", "Julian Nubert", "Yoshua Nava", "Shehryar Khattak", "Marco Hutter"],
+  "venue": "T-RO 2024",
+  "year": 2024,
+  "track": "bible",
+  "kind": "full",
+  "mine": false,
+  "tags": ["Degeneracy", "LiDAR", "RobustSLAM"],
+  "links": { "arxiv": "https://arxiv.org/abs/2211.16335", "pdf": "https://arxiv.org/pdf/2211.16335", "code": "", "project": "https://sites.google.com/leggedrobotics.com/x-icp", "official": "https://doi.org/10.1109/TRO.2023.3335691" },
+  "tldr": {
+    "en": "Each ICP iteration counts how many LiDAR correspondences constrain each pose direction; blind directions keep the odometry prior. Mine end error 0.27 vs 6.37 m.",
+    "ko": "ICP 반복마다 각 pose 방향을 붙잡는 LiDAR 대응점 수를 세고, 정보가 없는 방향은 odometry prior를 유지합니다. 광산 터널 최종 오차 0.27 m vs 6.37 m."
+  },
+  "abstract": "Modern robotic systems are required to operate in challenging environments, which demand reliable localization under challenging conditions. LiDAR-based localization methods, such as the Iterative Closest Point (ICP) algorithm, can suffer in geometrically uninformative environments that are known to deteriorate point cloud registration performance and push optimization toward divergence along weakly constrained directions. To overcome this issue, this work proposes i) a robust fine-grained localizability detection module, and ii) a localizability-aware constrained ICP optimization module, which couples with the localizability detection module in a unified manner. The proposed localizability detection is achieved by utilizing the correspondences between the scan and the map to analyze the alignment strength against the principal directions of the optimization as part of its fine-grained LiDAR localizability analysis. In the second part, this localizability analysis is then integrated into the scan-to-map point cloud registration to generate drift-free pose updates by enforcing controlled updates or leaving the degenerate directions of the optimization unchanged. The proposed method is thoroughly evaluated and compared to state-of-the-art methods in simulated and real-world experiments, demonstrating the performance and reliability improvement in LiDAR-challenging environments. In all experiments, the proposed framework demonstrates accurate and generalizable localizability detection and robust pose estimation without environment-specific parameter tuning.",
+  "abstract_ko": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "muse",
+  "title": "MUSE: Multimodal Uncertainty Quantification of State Estimation",
+  "authors": ["Minkyung Kim", "Henry Che", "Bhargav Chandaka", "Bhumsitt Pramuanpornsatid", "Chengyu Yang", "Sheng Cheng", "Xiaofeng Wang", "Naira Hovakimyan", "Shenlong Wang"],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["VIO", "Uncertainty", "RobustSLAM", "Dataset"],
+  "links": { "arxiv": "https://arxiv.org/abs/2605.17421", "pdf": "https://arxiv.org/pdf/2605.17421", "code": "https://github.com/hungdche/MUSE", "project": "", "official": "" },
+  "tldr": {
+    "en": "A Mamba network reads camera, IMU and odometry streams and outputs a pose correction plus a calibrated covariance for any VO/VIO; a plug-in, <3 ms per window.",
+    "ko": "Mamba 네트워크가 카메라, IMU, odometry 흐름을 읽고 어떤 VO/VIO에든 pose 보정값과 보정된 covariance를 붙여 주는 plug-in입니다. 창 하나에 3 ms 미만입니다."
+  },
+  "abstract": "Accurate visual state estimation has been a central topic in robotics with a wide range of applications in robot navigation, autonomous driving, and autonomous flight. Recent advances in robot perception have led to significant improvements in the accuracy and robustness of state estimation, yet a fundamental challenge remains in how to quantify and calibrate its precision, i.e., how confident we are in an estimate and whether failures can be detected. This issue is particularly pronounced in visual–inertial odometry (VIO), where the heteroscedastic and multimodal nature of the problem makes uncertainty quantification especially difficult. This paper introduces MUSE (Multimodal Uncertainty Quantification of State Estimation), a novel real-time learning-based framework that leverages the strong and efficient sequential modeling capacity of Mamba to estimate localization uncertainty from multiple asynchronous sensor streams. Experiments on both public and in-house datasets demonstrate that MUSE achieves superior reliability and robustness compared to existing uncertainty quantification methods, and ablation studies justify the benefits of its key design choices. We release our source code and dataset at https://github.com/hungdche/MUSE.",
+  "abstract_ko": ""
+}

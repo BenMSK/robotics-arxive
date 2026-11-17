@@ -1,0 +1,18 @@
+{
+  "id": "prrtc",
+  "title": "pRRTC: GPU-Parallel RRT-Connect for Fast, Consistent, and Low-Cost Motion Planning",
+  "authors": ["Chih H. Huang", "Pranav Jadhav", "Brian Plancher", "Zachary Kingston"],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["MotionPlanning", "SamplingBased", "GPU", "Manipulation"],
+  "links": { "arxiv": "https://arxiv.org/abs/2503.06757", "pdf": "https://arxiv.org/pdf/2503.06757", "code": "https://github.com/CoMMALab/pRRTC", "project": "", "official": "" },
+  "tldr": {
+    "en": "RRT-Connect rebuilt for the GPU: hundreds of tree extensions run at once and every edge is collision-checked in parallel, so planning is fast and steady.",
+    "ko": "GPU용으로 다시 만든 RRT-Connect입니다. 수백 개의 tree 확장을 동시에 돌리고 edge마다 collision check를 병렬로 해서, 빠르고 planning 시간의 편차도 작습니다."
+  },
+  "abstract": "Sampling-based motion planning algorithms, like the Rapidly-Exploring Random Tree (RRT) and its widely used variant, RRT-Connect, provide efficient solutions for high-dimensional planning problems faced by real-world robots. However, these methods remain computationally intensive, particularly in complex environments that require many collision checks. To improve performance, recent efforts have explored parallelizing specific components of RRT such as collision checking, or running multiple planners independently. However, little has been done to develop an integrated parallelism approach, co-designed for large-scale parallelism. In this work we present pRRTC, a RRT-Connect based planner co-designed for GPU acceleration across the entire algorithm through parallel expansion and SIMT-optimized collision checking. We evaluate the effectiveness of pRRTC on the MotionBenchMaker dataset using robots with 7, 8, and 14 degrees of freedom (DoF). Compared to the state-of-the-art, pRRTC achieves as much as a 10× speedup on constrained reaching tasks with a 5.4× reduction in standard deviation. pRRTC also achieves a 1.4× reduction in average initial path cost. Finally, we deploy pRRTC on a 14-DoF dual Franka Panda arm setup and demonstrate real-time, collision-free motion planning with dynamic obstacles. We open-source our planner to support the wider community.",
+  "abstract_ko": ""
+}

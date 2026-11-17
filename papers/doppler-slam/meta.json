@@ -1,0 +1,37 @@
+{
+  "id": "doppler-slam",
+  "title": "Doppler-SLAM: Doppler-Aided Radar-Inertial and LiDAR-Inertial Simultaneous Localization and Mapping",
+  "authors": [
+    "Dong Wang",
+    "Hannes Haag",
+    "Daniel Casado Herraez",
+    "Stefan May",
+    "Cyrill Stachniss",
+    "Andreas Nüchter"
+  ],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": [
+    "Radar",
+    "LiDAR",
+    "RobustSLAM",
+    "DynamicSLAM",
+    "Outliers"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2504.11634",
+    "pdf": "https://arxiv.org/pdf/2504.11634",
+    "code": "https://github.com/Wayne-DWA/Doppler-SLAM",
+    "project": "",
+    "official": ""
+  },
+  "tldr": {
+    "en": "Radar- or FMCW-LiDAR-inertial SLAM that uses per-point Doppler to drop moving points and constrain velocity; radar accuracy sometimes reaches LiDAR level.",
+    "ko": "점마다 측정한 Doppler로 움직이는 점을 걸러 내고 속도를 제약하는 radar/FMCW LiDAR-inertial SLAM입니다. Radar 정확도가 때로 LiDAR 수준에 이릅니다."
+  },
+  "abstract": "Simultaneous localization and mapping is a critical capability for autonomous systems. Traditional SLAM approaches often rely on visual or LiDAR sensors and face significant challenges in adverse conditions such as low light or featureless environments. To overcome these limitations, we propose a novel Doppler-aided radar-inertial and LiDAR-inertial SLAM framework that leverages the complementary strengths of 4D radar, FMCW LiDAR, and inertial measurement units. Our system integrates Doppler velocity measurements and spatial data into a tightly-coupled front-end and graph optimization back-end to provide enhanced ego velocity estimation, accurate odometry, and robust mapping. We also introduce a Doppler-based scan-matching technique to improve front-end odometry in dynamic environments. In addition, our framework incorporates an innovative online extrinsic calibration mechanism, utilizing Doppler velocity and loop closure to dynamically maintain sensor alignment. Extensive evaluations on both public and proprietary datasets show that our system significantly outperforms state-of-the-art radar-SLAM and LiDAR-SLAM frameworks in terms of accuracy and robustness. To encourage further research, the code of our Doppler-SLAM and our dataset are available at: https://github.com/Wayne-DWA/Doppler-SLAM.",
+  "abstract_ko": ""
+}

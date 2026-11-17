@@ -1,0 +1,18 @@
+{
+  "id": "treeirl",
+  "title": "TreeIRL: Safe Urban Driving with Tree Search and Inverse Reinforcement Learning",
+  "authors": ["Momchil S. Tomov", "Sang Uk Lee", "Hansford Hendargo", "Jinwook Huh", "Teawon Han", "Forbes Howington", "Rafael da Silva", "Gianmarco Bernasconi", "Marc Heim", "Samuel Findler", "Xiaonan Ji", "Alexander Boule", "Michael Napoli", "Kuo Chen", "Jesse Miller", "Boaz Floor", "Yunqing Hu"],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["MotionPlanning", "InverseRL", "AutonomousDriving", "Safety", "ReinforcementLearning"],
+  "links": { "arxiv": "https://arxiv.org/abs/2509.13579", "pdf": "https://arxiv.org/pdf/2509.13579", "code": "", "project": "", "official": "" },
+  "tldr": {
+    "en": "MCTS proposes 100 safe candidate trajectories and an IRL scorer picks the most human-like one; zero ACC or cut-in takeovers in 268 miles of Las Vegas driving.",
+    "ko": "MCTS가 안전한 후보 trajectory 100개를 만들고 IRL scorer가 가장 사람다운 것을 고릅니다. 라스베이거스 도로 268마일에서 ACC·cut-in takeover가 한 번도 없었습니다."
+  },
+  "abstract": "We present TreeIRL, a novel planner for autonomous driving that combines Monte Carlo tree search (MCTS) and inverse reinforcement learning (IRL) to achieve state-of-the-art performance in simulation and in real-world driving. The core idea is to use MCTS to find a promising set of safe candidate trajectories and a deep IRL scoring function to select the most human-like among them. We evaluate TreeIRL against both classical and state-of-the-art planners in large-scale simulations and on 500+ miles of real-world autonomous driving in the Las Vegas metropolitan area. Test scenarios include dense urban traffic, adaptive cruise control, cut-ins, and traffic lights. TreeIRL achieves the best overall performance, striking a balance between safety, progress, comfort, and human-likeness. To our knowledge, our work is the first demonstration of MCTS-based planning on public roads and underscores the importance of evaluating planners across a diverse set of metrics and in real-world environments. TreeIRL is highly extensible and could be further improved with reinforcement learning and imitation learning, providing a framework for exploring different combinations of classical and learning-based approaches to solve the planning bottleneck in autonomous driving.",
+  "abstract_ko": ""
+}

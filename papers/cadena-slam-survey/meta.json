@@ -1,0 +1,18 @@
+{
+  "id": "cadena-slam-survey",
+  "title": "Past, Present, and Future of Simultaneous Localization And Mapping: Towards the Robust-Perception Age",
+  "authors": ["Cesar Cadena", "Luca Carlone", "Henry Carrillo", "Yasir Latif", "Davide Scaramuzza", "José Neira", "Ian Reid", "John J. Leonard"],
+  "venue": "T-RO 2016",
+  "year": 2016,
+  "track": "bible",
+  "kind": "full",
+  "mine": false,
+  "tags": ["Survey", "RobustSLAM", "FactorGraph", "Outliers", "Certifiable"],
+  "links": { "arxiv": "https://arxiv.org/abs/1606.05830", "pdf": "https://arxiv.org/pdf/1606.05830", "code": "", "project": "https://slam-future.github.io/", "official": "https://ieeexplore.ieee.org/document/7747236" },
+  "tldr": {
+    "en": "The field guide to SLAM: MAP estimation on factor graphs, front-end vs back-end, open problems of the robust-perception age, and whether SLAM is solved.",
+    "ko": "Factor graph 위의 MAP 추정, front-end와 back-end, robust-perception 시대의 미해결 문제를 정리하고 SLAM이 필요한지, 풀렸는지에 답하는 SLAM의 표준 지도입니다."
+  },
+  "abstract": "Simultaneous Localization And Mapping (SLAM) consists in the concurrent construction of a model of the environment (the map), and the estimation of the state of the robot moving within it. The SLAM community has made astonishing progress over the last 30 years, enabling large-scale real-world applications, and witnessing a steady transition of this technology to industry. We survey the current state of SLAM and consider future directions. We start by presenting what is now the de-facto standard formulation for SLAM. We then review related work, covering a broad set of topics including robustness and scalability in long-term mapping, metric and semantic representations for mapping, theoretical performance guarantees, active SLAM and exploration, and other new frontiers. This paper simultaneously serves as a position paper and tutorial to those who are users of SLAM. By looking at the published research with a critical eye, we delineate open challenges and new research issues, that still deserve careful scientific investigation. The paper also contains the authors’ take on two questions that often animate discussions during robotics conferences: Do robots need SLAM? and Is SLAM solved?",
+  "abstract_ko": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "context-diffusion-mp",
+  "title": "Accelerated Multi-Modal Motion Planning Using Context-Conditioned Diffusion Models",
+  "authors": ["Edward Sandra", "Lander Vanroye", "Dries Dirckx", "Ruben Cartuyvels", "Jan Swevers", "Wilm Decré"],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["MotionPlanning", "Diffusion", "ImitationLearning", "Manipulation"],
+  "links": { "arxiv": "https://arxiv.org/abs/2510.14615", "pdf": "https://arxiv.org/pdf/2510.14615", "code": "", "project": "https://meco-group.github.io/campd", "official": "" },
+  "tldr": {
+    "en": "A diffusion model draws 100 arm trajectories in 66 ms, conditioned through attention on a list of obstacle shapes, and works in scenes it never saw in training.",
+    "ko": "Attention으로 장애물 형상 목록을 조건으로 받는 diffusion model이 팔 trajectory 100개를 66 ms에 만들고, 학습 때 보지 못한 장면에서도 동작합니다."
+  },
+  "abstract": "Classical methods in robot motion planning, such as sampling-based and optimization-based methods, often struggle with scalability towards higher-dimensional state spaces and complex environments. Diffusion models, known for their capability to learn complex, high-dimensional and multi-modal data distributions, provide a promising alternative when applied to motion planning problems and have already shown interesting results. However, most of the current approaches train their model for a single environment, limiting their generalization to environments not seen during training. The techniques that do train a model for multiple environments rely on a specific camera to provide the model with the necessary environmental information and therefore always require that sensor. To effectively adapt to diverse scenarios without the need for retraining, this research proposes Context-Aware Motion Planning Diffusion (CAMPD). CAMPD leverages a classifier-free denoising probabilistic diffusion model, conditioned on sensor-agnostic contextual information. An attention mechanism, integrated in the well-known U-Net architecture, conditions the model on an arbitrary number of contextual parameters. CAMPD is evaluated on a 7-DoF robot manipulator and benchmarked against state-of-the-art approaches on real-world tasks, showing its ability to generalize to unseen environments and generate high-quality, multi-modal trajectories, at a fraction of the time required by existing methods.",
+  "abstract_ko": ""
+}

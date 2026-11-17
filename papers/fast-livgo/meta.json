@@ -1,0 +1,39 @@
+{
+  "id": "fast-livgo",
+  "title": "FAST-LIVGO: A Degeneracy-Robust LiDAR-Inertial-Visual-GNSS Fusion Odometry",
+  "authors": [
+    "Zhiyu Chen",
+    "Chunran Zheng",
+    "Jiayu Wen",
+    "Xiaolei Zhang",
+    "Jiaming Xu",
+    "Feng Pan",
+    "Yukang Cui"
+  ],
+  "venue": "IROS 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": [
+    "RobustSLAM",
+    "LiDAR",
+    "VIO",
+    "GNSS",
+    "Degeneracy",
+    "Outliers"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2606.19190",
+    "pdf": "https://arxiv.org/pdf/2606.19190",
+    "code": "",
+    "project": "",
+    "official": ""
+  },
+  "tldr": {
+    "en": "Adds raw GNSS Doppler and carrier-phase updates to FAST-LIVO2, and uses the LIVO Hessian eigenvalue to decide whether to trust odometry or GNSS.",
+    "ko": "FAST-LIVO2에 GNSS Doppler와 carrier phase를 tightly coupled로 넣고, LIVO Hessian의 최소 eigenvalue로 odometry와 GNSS 중 무엇을 믿을지 정합니다."
+  },
+  "abstract": "Robust state estimation and mapping in long-term, large-scale, and highly dynamic environments remains a key challenge in robotics. Existing LiDAR-Inertial-Visual Odometry (LIVO) systems achieve strong local accuracy but suffer from accumulated drift over long distances and may fail in geometrically degraded or textureless scenes. Meanwhile, GNSS-aided fusion frameworks often rely on LiDAR or visual odometry for state prediction and outlier rejection, making them vulnerable when odometry degenerates. To address these limitations, we propose a tightly coupled LiDAR-Inertial-Visual-GNSS fusion framework based on an Error-State Iterated Kalman Filter. An online spatiotemporal alignment module using Dynamic Time Warping is introduced for highly dynamic conditions. To better exploit GNSS precision, we develop observation models based on Doppler shifts and fixed-anchor Time-Differenced Carrier Phase, providing millimeter-level relative constraints without augmenting historical anchor states. We further design a degeneracy-aware dual-mode outlier rejection strategy that switches between LIVO-prior-guided rejection and GNSS-aided recovery according to the LIVO degeneracy level. Experiments on the public M3DGR dataset and a custom 20~m/s fixed-wing UAV dataset demonstrate that our system reduces accumulated drift and map ghosting, outperforming state-of-the-art methods in accuracy and robustness.",
+  "abstract_ko": ""
+}

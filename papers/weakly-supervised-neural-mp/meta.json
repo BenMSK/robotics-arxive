@@ -1,0 +1,18 @@
+{
+  "id": "weakly-supervised-neural-mp",
+  "title": "Weakly-Supervised Learning for Physics-Informed Neural Motion Planning Via Sparse Roadmap",
+  "authors": ["Ruiqi Ni", "Yuchen Liu", "Ahmed H. Qureshi"],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["MotionPlanning", "SamplingBased", "Manipulation"],
+  "links": { "arxiv": "https://arxiv.org/abs/2604.13204", "pdf": "https://arxiv.org/pdf/2604.13204", "code": "", "project": "", "official": "" },
+  "tldr": {
+    "en": "Learns a neural travel-time field from the Eikonal PDE plus loose bounds from a sparse roadmap; success in 18 multi-room Gibson scenes rises from 77% to 91%.",
+    "ko": "Eikonal PDE와 sparse roadmap이 주는 느슨한 상한·하한으로 neural travel-time field를 학습해, 방이 여러 개인 Gibson 18개 장면에서 성공률을 77%에서 91%로 올립니다."
+  },
+  "abstract": "The motion planning problem requires finding a collision-free path between start and goal configurations in high-dimensional, cluttered spaces. Recent learning-based methods offer promising solutions, with self-supervised physics-informed approaches such as Neural Time Fields (NTFields) solving the Eikonal equation to learn value functions without expert demonstrations. However, existing physics-informed methods struggle to scale in complex, multi-room environments, where simply increasing the number of samples cannot resolve local minima or guarantee global consistency. We propose Hierarchical Neural Time Fields (H-NTFields), a weakly-supervised framework that combines weak supervision from sparse roadmaps with physics-informed PDE regularization. The roadmap provides global topological anchors through upper and lower bounds on travel times, while PDE losses enforce local geometric fidelity and obstacle-aware propagation. Experiments on 18 Gibson environments and real robotic platforms show that H-NTFields substantially improves robustness over prior physics-informed methods, while enabling fast amortized inference through a continuous value representation.",
+  "abstract_ko": ""
+}

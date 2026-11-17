@@ -1,0 +1,37 @@
+{
+  "id": "cpba-liwo",
+  "title": "CPBA-LIWO: Continuous-Time LiDAR-Inertial-Wheel Odometry Based on Probabilistic Bundle Adjustment",
+  "authors": [
+    "Song Wu",
+    "Yunzhou Zhang",
+    "Yuezhang Lv",
+    "Wu Li",
+    "Sizhan Wang",
+    "Su Yan",
+    "Hengwang Ding"
+  ],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "abstract",
+  "mine": false,
+  "tags": [
+    "RobustSLAM",
+    "LiDAR",
+    "WheelOdometry",
+    "Degeneracy"
+  ],
+  "links": {
+    "arxiv": "",
+    "pdf": "",
+    "code": "",
+    "project": "",
+    "official": "https://doi.org/10.1109/icra57385.2026.11697588"
+  },
+  "tldr": {
+    "en": "Fuses LiDAR, IMU and wheel odometry on a continuous-time B-spline with sliding-window voxel BA; wheels carry the estimate where geometry degenerates.",
+    "ko": "LiDAR, IMU, wheel odometry를 continuous-time B-spline으로 융합하고 sliding window voxel BA를 씁니다. 기하가 degenerate한 곳에서는 바퀴 정보가 추정을 받쳐 줍니다."
+  },
+  "abstract": "LiDAR-based odometry is widely used in ground robot localization. However, current methods encounter challenges in accuracy and robustness due to structural degradation, system observational error, and accumulated error. To address the above issues, we propose CPBA-LIWO, a continuous-time LiDAR-Inertial-Wheel (LIW) odometry based on probabilistic bundle adjustment (PBA) within a sliding window. This method constructs a general wheel model, which is used for the complementary fusion of LiDAR, IMU and wheel data through a continuous-time trajectory using a B-spline curve, thereby improving the robustness of the system in structurally degraded environments. Furthermore, to improve the accuracy of long-distance odometry, we propose a probabilistic model for the voxel plane and implement a sliding-window voxel PBA backend based on this model. The experimental results on the M2DGR-plus and KAIST datasets demonstrate that our method outperforms state-of-the-art LiDAR-based odometry in terms of accuracy and robustness.",
+  "abstract_ko": "LiDAR 기반 odometry (주행 거리 추정)는 지상 로봇 위치 추정에 널리 쓰입니다. 하지만 현재 방법은 구조적 degradation, 시스템 관측 오차, 누적 오차 때문에 정확도와 robustness에서 어려움을 겪습니다. 이 문제를 해결하기 위해, sliding window 안에서 probabilistic bundle adjustment (PBA)를 쓰는 continuous-time LiDAR-Inertial-Wheel (LIW) odometry인 CPBA-LIWO를 제안합니다. 이 방법은 일반적인 wheel 모델을 구성하고, B-spline 곡선으로 표현한 continuous-time trajectory로 LiDAR, IMU, wheel 데이터를 상호 보완적으로 융합해, 구조적으로 degenerate한 환경에서 시스템의 robustness를 높입니다. 또한 장거리 odometry의 정확도를 높이기 위해 voxel plane의 확률 모델을 제안하고, 이 모델에 기반한 sliding window voxel PBA backend를 구현합니다. M2DGR-plus와 KAIST 데이터셋 실험에서 제안 방법은 정확도와 robustness 모두에서 state-of-the-art LiDAR 기반 odometry를 앞섭니다."
+}

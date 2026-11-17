@@ -1,0 +1,40 @@
+{
+  "id": "fire-livwo",
+  "title": "FIRE-LIVWO: Robust LiDAR-Inertial-Visual-Wheel Odometry via Failure-Immune mmWave Radar Enhancement",
+  "authors": [
+    "Kun Hu",
+    "Menggang Li",
+    "Kaidi Wu",
+    "Zhiwen Jin",
+    "Yingjie Zhao",
+    "Chaoquan Tang",
+    "Eryi Hu",
+    "Gongbo Zhou"
+  ],
+  "venue": "IROS 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": [
+    "RobustSLAM",
+    "LiDAR",
+    "Radar",
+    "WheelOdometry",
+    "Degeneracy",
+    "Nonholonomic"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2609.05325",
+    "pdf": "https://arxiv.org/pdf/2609.05325",
+    "code": "https://github.com/KJ-Falloutlast/FIRE-LIVWO",
+    "project": "",
+    "official": ""
+  },
+  "tldr": {
+    "en": "A coal-mine odometry that watches two scores: image transmittance switches in radar Doppler, and the LiDAR Hessian condition switches in wheel odometry.",
+    "ko": "탄광용 odometry입니다. 영상 투과율이 떨어지면 radar Doppler를, LiDAR Hessian이 나빠지면 wheel odometry를 켭니다."
+  },
+  "abstract": "Achieving robust SLAM in large-scale underground coal mines with complex structures and severe degeneracies remains highly challenging. Dense smoke and dust cause substantial loss of visual information and degrade LiDAR point-cloud features, while long, self-similar corridors induce geometric degeneration, leading to pronounced odometry drift. To address these issues, we propose FIRE-LIVWO: Failure-Immune mmWave Radar-Enhanced LiDAR-Inertial-Visual-Wheel Odometry, a tightly coupled multi-modal odometry framework based on an iterated error-state Kalman filter (IESKF). The framework fuses 4D mmWave radar, LiDAR, and visual features within a unified VoxelMap and jointly constructs LiDAR-radar point-to-plane residuals and sparse visual photometric residuals. In smoke-filled environments, we exploit the strong penetration of 4D mmWave radar and introduce pointwise Doppler velocity constraints to preserve state observability. In geometrically degenerate corridors, we tightly couple wheel odometry using non-holonomic constraints (NHC) and online lever-arm compensation to reduce drift. Our central contribution is a degeneration detection and adaptive fusion model switching strategy grounded in geometric and visual observability analysis, which quantifies observability online and dynamically adjusts modality weights. Real-world experiments in underground coal mines demonstrate that FIRE-LIVWO accurately identifies failure boundaries, enabling reliable modality switching under extreme conditions. Compared with baselines, it achieves superior accuracy and robustness (average localization error of 5.677m). We open source our code on Github to benefit the robotics community.",
+  "abstract_ko": ""
+}

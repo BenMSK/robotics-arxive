@@ -1,0 +1,18 @@
+{
+  "id": "kiss-icp",
+  "title": "KISS-ICP: In Defense of Point-to-Point ICP -- Simple, Accurate, and Robust Registration If Done the Right Way",
+  "authors": ["Ignacio Vizzo", "Tiziano Guadagnino", "Benedikt Mersch", "Louis Wiesmann", "Jens Behley", "Cyrill Stachniss"],
+  "venue": "RA-L 2023",
+  "year": 2023,
+  "track": "bible",
+  "kind": "full",
+  "mine": false,
+  "tags": ["LiDAR", "RobustSLAM", "Outliers", "AutonomousDriving"],
+  "links": { "arxiv": "https://arxiv.org/abs/2209.15397", "pdf": "https://arxiv.org/pdf/2209.15397", "code": "https://github.com/PRBonn/kiss-icp", "project": "", "official": "" },
+  "tldr": {
+    "en": "Point-to-point ICP with constant-velocity deskewing, an adaptive threshold and a robust kernel: 7 parameters, no IMU, on par with far bigger systems.",
+    "ko": "Constant velocity deskewing, adaptive threshold, robust kernel만 붙인 point-to-point ICP로, 파라미터 7개와 IMU 없이 훨씬 복잡한 LiDAR odometry와 비슷한 성능을 냅니다."
+  },
+  "abstract": "Robust and accurate pose estimation of a robotic platform, so-called sensor-based odometry, is an essential part of many robotic applications. While many sensor odometry systems made progress by adding more complexity to the ego-motion estimation process, we move in the opposite direction. By removing a majority of parts and focusing on the core elements, we obtain a surprisingly effective system that is simple to realize and can operate under various environmental conditions using different LiDAR sensors. Our odometry estimation approach relies on point-to-point ICP combined with adaptive thresholding for correspondence matching, a robust kernel, a simple but widely applicable motion compensation approach, and a point cloud subsampling strategy. This yields a system with only a few parameters that in most cases do not even have to be tuned to a specific LiDAR sensor. Our system performs on par with state-of-the-art methods under various operating conditions using different platforms using the same parameters: automotive platforms, UAV-based operation, vehicles like segways, or handheld LiDARs. We do not require integrating IMU data and solely rely on 3D point clouds obtained from a wide range of 3D LiDAR sensors, thus, enabling a broad spectrum of different applications and operating conditions. Our open-source system operates faster than the sensor frame rate in all presented datasets and is designed for real-world scenarios.",
+  "abstract_ko": ""
+}

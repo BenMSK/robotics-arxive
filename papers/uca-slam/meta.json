@@ -1,0 +1,35 @@
+{
+  "id": "uca-slam",
+  "title": "UCA-SLAM: Tightly Coupled Visual-LiDAR SLAM with DoF-Wise Uncertainty-Driven Constraint Analysis",
+  "authors": [
+    "Shizhuo Yu",
+    "Wenbin Zhu",
+    "Jing Yuan",
+    "Yuanxi Gao"
+  ],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "abstract",
+  "mine": false,
+  "tags": [
+    "RobustSLAM",
+    "LiDAR",
+    "VisualSLAM",
+    "Uncertainty",
+    "Degeneracy"
+  ],
+  "links": {
+    "arxiv": "",
+    "pdf": "",
+    "code": "",
+    "project": "",
+    "official": "https://doi.org/10.1109/icra57385.2026.11697518"
+  },
+  "tldr": {
+    "en": "Visual-LiDAR SLAM that scores how strongly each feature constrains each pose DoF and weights fusion and BA by it: a direct handle on per-axis degeneracy.",
+    "ko": "각 feature가 6-DoF pose의 축마다 얼마나 강하게 구속하는지 계산해 fusion과 BA에 가중하는 visual-LiDAR SLAM입니다. 축별 degeneracy를 직접 다룹니다."
+  },
+  "abstract": "Single sensor (visual or LiDAR) simultaneous localization and mapping (SLAM) is fragile in the complex environment, which makes visual-LiDAR fusion a mainstream in SLAM research. However, most existing fusion methods omit explicit modeling of feature uncertainties and do not quantify each feature's constraint strength on each degree of freedom (DoF) of the 6-DoF pose, thereby hindering the full exploitation of the complementary information across different sensors. In this paper, a tightly coupled visual-LiDAR SLAM method termed UCA-SLAM is proposed, which integrates the closed-form uncertainty propagation and the DoF-wise constraint analysis. Specifically, UCA-SLAM maintains uncertainties for visual map points and LiDAR voxel planes, and computes DoF-wise constraint strength for each feature. In the front-end tracking, the DoF-wise constraints of features are comprehensively analyzed, which provides an adaptive fusion mechanism for pose estimation, and an explicit uncertainty propagation from feature measurements to the 6-DoF pose is derived. The resultant feature and pose uncertainties are then used to weight the cost function in local bundle adjustment (BA) optimization of UCA-SLAM to improve the accuracy of the system. Extensive experiments conducted on public datasets and in real-world environments demonstrate that UCA-SLAM outperforms state-of-the-art visual-LiDAR fusion SLAM methods. UCA-SLAM is open-sourced to benefit the community.",
+  "abstract_ko": "단일 센서(visual 또는 LiDAR) simultaneous localization and mapping (SLAM)은 복잡한 환경에서 쉽게 무너지기 때문에, visual-LiDAR fusion이 SLAM 연구의 주류가 되었습니다. 하지만 기존 fusion 방법 대부분은 feature 불확실성을 명시적으로 모델링하지 않고, 각 feature가 6-DoF pose의 각 degree of freedom (DoF, 자유도)을 얼마나 강하게 구속하는지 정량화하지 않아, 센서 간 상호 보완 정보를 충분히 활용하지 못합니다. 이 논문은 closed-form 불확실성 전파와 DoF별 constraint 분석을 결합한 tightly coupled visual-LiDAR SLAM 방법 UCA-SLAM을 제안합니다. 구체적으로 UCA-SLAM은 visual map point와 LiDAR voxel plane의 불확실성을 유지하고, feature마다 DoF별 constraint 강도를 계산합니다. Front-end tracking에서는 feature의 DoF별 constraint를 종합적으로 분석해 pose 추정을 위한 적응형 fusion 방식을 제공하고, feature 측정에서 6-DoF pose까지 이어지는 명시적 불확실성 전파를 유도합니다. 이렇게 얻은 feature 불확실성과 pose 불확실성은 UCA-SLAM의 local bundle adjustment (BA) 최적화에서 cost function의 가중치로 쓰여 시스템 정확도를 높입니다. 공개 데이터셋과 실제 환경에서 진행한 폭넓은 실험에서 UCA-SLAM은 state-of-the-art visual-LiDAR fusion SLAM 방법을 앞섭니다. UCA-SLAM은 커뮤니티를 위해 오픈소스로 공개되어 있습니다."
+}

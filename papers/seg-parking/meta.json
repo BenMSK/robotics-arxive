@@ -1,0 +1,18 @@
+{
+  "id": "seg-parking",
+  "title": "SEG-Parking: Towards Safe, Efficient, and Generalizable Autonomous Parking via End-to-End Offline Reinforcement Learning",
+  "authors": ["Zewei Yang", "Zengqi Peng", "Jun Ma"],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["Parking", "ReinforcementLearning", "EndToEndDriving", "AutonomousDriving"],
+  "links": { "arxiv": "https://arxiv.org/abs/2509.13956", "pdf": "https://arxiv.org/pdf/2509.13956", "code": "", "project": "", "official": "" },
+  "tldr": {
+    "en": "Learns an end-to-end parking policy from a fixed log of noisy Hybrid A* + LQR runs with conservative offline RL; it yields to an oncoming car and generalizes to unseen slots in CARLA.",
+    "ko": "노이즈를 섞은 Hybrid A* + LQR 주행 로그만으로 conservative offline RL을 학습해, 마주 오는 차에 양보하고 처음 보는 주차 칸에도 일반화하는 end-to-end 주차 policy입니다."
+  },
+  "abstract": "Autonomous parking is a critical component for achieving safe and efficient urban autonomous driving. However, unstructured environments and dynamic interactions pose significant challenges to autonomous parking tasks. To address this problem, we propose SEG-Parking, a novel end-to-end offline reinforcement learning (RL) framework to achieve interaction-aware autonomous parking. Notably, a specialized parking dataset is constructed for parking scenarios, which include those without interference from the opposite vehicle (OV) and complex ones involving interactions with the OV. Based on this dataset, a goal-conditioned state encoder is pretrained to map the fused perception information into the latent space. Then, an offline RL policy is optimized with a conservative regularizer that penalizes out-of-distribution actions. Extensive closed-loop experiments are conducted in the high-fidelity CARLA simulator. Comparative results demonstrate the superior performance of our framework with the highest success rate and robust generalization to out-of-distribution parking scenarios. The related dataset and source code will be made publicly available after the paper is accepted.",
+  "abstract_ko": ""
+}

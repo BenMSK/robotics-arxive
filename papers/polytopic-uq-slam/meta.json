@@ -1,0 +1,18 @@
+{
+  "id": "polytopic-uq-slam",
+  "title": "Provably Guaranteed Polytopic Uncertainty Quantification for SLAM",
+  "authors": ["Guangyang Zeng", "Yulong Gao", "Yuan Shen", "Lingpeng Chen", "Haoying Li", "Guodong Shi", "Junfeng Wu"],
+  "venue": "RSS 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["RobustSLAM", "Uncertainty", "Certifiable", "Safety"],
+  "links": { "arxiv": "https://arxiv.org/abs/2605.28172", "pdf": "https://arxiv.org/pdf/2605.28172", "code": "https://github.com/LIAS-CUHKSZ/Polytopic-SLAM-Uncertainty-Quantification", "project": "", "official": "https://www.roboticsproceedings.org/rss22/p053.pdf" },
+  "tldr": {
+    "en": "Polytope uncertainty sets for a full 3D landmark SLAM pipeline that provably contain the true poses and map; conformal prediction calibrates the input bounds.",
+    "ko": "3D landmark SLAM 전체에 대해 실제 pose와 지도를 반드시 포함하는 polytope 불확실성 집합을 계산하고, 입력 오차 범위는 conformal prediction으로 보정합니다."
+  },
+  "abstract": "In safety-critical robotics applications, guaranteed and practical uncertainty quantification (UQ) in perception is vital. Many existing works either offer no formal containment guarantee, rely on restrictive modeling assumptions, or focus only on pose estimation rather than a complete SLAM pipeline. This paper presents provably guaranteed UQ algorithms for 3D-3D landmark-based SLAM. The algorithms consist of three basic UQ modules: forward UQ for mapping, backward UQ for pose tracking, and pose compound. Each module produces a certified uncertainty set; when the input uncertainty bounds are deterministic, the output sets inherit deterministic guarantees, i.e., they provably contain the true poses and landmarks. Specifically, we use polytopes to represent uncertainty sets, enabling tractable computations and a unified treatment of pose uncertainty. To enhance algorithms' practical usability, we incorporate conformal prediction to calibrate measurement uncertainty from data with prescribed probability. Simulations and experiments demonstrate that the proposed algorithms provide both strong theoretical guarantees and practical usability. The code is open-sourced at https://github.com/LIAS-CUHKSZ/Polytopic-SLAM-Uncertainty-Quantification.",
+  "abstract_ko": ""
+}

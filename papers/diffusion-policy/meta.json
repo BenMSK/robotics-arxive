@@ -1,0 +1,18 @@
+{
+  "id": "diffusion-policy",
+  "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+  "authors": ["Cheng Chi", "Zhenjia Xu", "Siyuan Feng", "Eric Cousineau", "Yilun Du", "Benjamin Burchfiel", "Russ Tedrake", "Shuran Song"],
+  "venue": "RSS 2023",
+  "year": 2023,
+  "track": "bible",
+  "kind": "full",
+  "mine": false,
+  "tags": ["Diffusion", "ImitationLearning", "Manipulation"],
+  "links": { "arxiv": "https://arxiv.org/abs/2303.04137", "pdf": "https://arxiv.org/pdf/2303.04137", "code": "https://github.com/real-stanford/diffusion_policy", "project": "https://diffusion-policy.cs.columbia.edu/", "official": "https://www.roboticsproceedings.org/rss19/p026.html" },
+  "tldr": {
+    "en": "A robot policy that denoises random noise into a short sequence of future actions; it handles multimodal demos and beats prior imitation methods by 46.9%.",
+    "ko": "무작위 노이즈를 여러 번 denoising해 미래 action 시퀀스를 만드는 robot policy입니다. 여러 갈래로 갈리는 시연도 잘 배우고, 기존 imitation learning보다 평균 46.9% 높습니다."
+  },
+  "abstract": "This paper introduces Diffusion Policy, a new way of generating robot behavior by representing a robot’s visuomotor policy as a conditional denoising diffusion process. We benchmark Diffusion Policy across 15 different tasks from 4 different robot manipulation benchmarks and find that it consistently outperforms existing state-of-the-art robot learning methods with an average improvement of 46.9%. Diffusion Policy learns the gradient of the action-distribution score function and iteratively optimizes with respect to this gradient field during inference via a series of stochastic Langevin dynamics steps. We find that the diffusion formulation yields powerful advantages when used for robot policies, including gracefully handling multimodal action distributions, being suitable for high-dimensional action spaces, and exhibiting impressive training stability. To fully unlock the potential of diffusion models for visuomotor policy learning on physical robots, this paper presents a set of key technical contributions including the incorporation of receding horizon control, visual conditioning, and the time-series diffusion transformer. We hope this work will help motivate a new generation of policy learning techniques that are able to leverage the powerful generative modeling capabilities of diffusion models. Code, data, and training details is available diffusion-policy.cs.columbia.edu",
+  "abstract_ko": ""
+}

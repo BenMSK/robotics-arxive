@@ -1,0 +1,18 @@
+{
+  "id": "diffuser",
+  "title": "Planning with Diffusion for Flexible Behavior Synthesis",
+  "authors": ["Michael Janner", "Yilun Du", "Joshua B. Tenenbaum", "Sergey Levine"],
+  "venue": "ICML 2022",
+  "year": 2022,
+  "track": "bible",
+  "kind": "full",
+  "mine": false,
+  "tags": ["Diffusion", "TrajectoryOptimization", "ReinforcementLearning", "MotionPlanning"],
+  "links": { "arxiv": "https://arxiv.org/abs/2205.09991", "pdf": "https://arxiv.org/pdf/2205.09991", "code": "https://github.com/jannerm/diffuser", "project": "https://diffusion-planning.github.io", "official": "" },
+  "tldr": {
+    "en": "Diffuser plans by denoising a whole state-action trajectory at once: start/goal by inpainting, rewards by gradient guidance. The root of diffusion planners.",
+    "ko": "Diffuser는 state-action trajectory 전체를 한 번에 denoising해 계획합니다. 시작과 목표는 inpainting으로, reward는 gradient guidance로 넣습니다. Diffusion planner의 출발점입니다."
+  },
+  "abstract": "Model-based reinforcement learning methods often use learning only for the purpose of estimating an approximate dynamics model, offloading the rest of the decision-making work to classical trajectory optimizers. While conceptually simple, this combination has a number of empirical shortcomings, suggesting that learned models may not be well-suited to standard trajectory optimization. In this paper, we consider what it would look like to fold as much of the trajectory optimization pipeline as possible into the modeling problem, such that sampling from the model and planning with it become nearly identical. The core of our technical approach lies in a diffusion probabilistic model that plans by iteratively denoising trajectories. We show how classifier-guided sampling and image inpainting can be reinterpreted as coherent planning strategies, explore the unusual and useful properties of diffusion-based planning methods, and demonstrate the effectiveness of our framework in control settings that emphasize long-horizon decision-making and test-time flexibility.",
+  "abstract_ko": ""
+}

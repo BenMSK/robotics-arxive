@@ -1,0 +1,5 @@
+{ "name": "Robotics arXive", "short_name": "arXive", "description": "Robust SLAM and AI motion planning papers explained in English and Korean from the DYROS point of view.", "start_url": "./", "scope": "./", "display": "standalone",
+  "background_color": "#F6F5F1", "theme_color": "#2456D6", "lang": "en",
+  "icons": [ { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+             { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+             { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" } ] }

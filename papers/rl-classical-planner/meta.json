@@ -1,0 +1,31 @@
+{
+  "id": "rl-classical-planner",
+  "title": "Enhancing Classical Motion Planners Using RL with Safety Guarantees",
+  "authors": [
+    "Elias Goldsztejn",
+    "Ronen Brafman"
+  ],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "abstract",
+  "mine": false,
+  "tags": [
+    "MotionPlanning",
+    "ReinforcementLearning",
+    "Safety"
+  ],
+  "links": {
+    "arxiv": "",
+    "pdf": "",
+    "code": "",
+    "project": "",
+    "official": "https://doi.org/10.1109/icra57385.2026.11696847"
+  },
+  "tldr": {
+    "en": "Regularizes an RL navigation policy toward a classical planner (DWA/TEB) so it stays in a trust region yet travels 8-43% faster with less proximity risk.",
+    "ko": "RL navigation policy를 DWA·TEB 같은 고전 planner 쪽으로 regularize해 trust region 안에 두면서도, 주행 시간을 8–43% 줄이고 근접 위험도 낮춥니다."
+  },
+  "abstract": "Classical algorithms for autonomous navigation, while well-understood and safe, require manual parameter tuning by experts to perform well. APPL and similar methods use machine learning to dynamically adjust planner parameters during deployment. This approach maintains the safety of classical systems but remains constrained by the under lying algorithm. Instead of parameter tuning, we suggest using classical planners to regulate action selection of a reinforcement learning (RL) algorithm. The resulting policy is provably similar to the well-understood classical algorithm, performs better than both a well-tuned classical planner and an unregularized RL based policy, and can be shown to respect a user-controlled trust region even during training. In experiments, our method reduces traversal time by 8% (vs. DWA) and 43% (vs. TEB), and lowers proximity risk by 24% and 17%, respectively, while matching or surpassing learning-based baselines and aligning more closely with user preferences.",
+  "abstract_ko": "자율 navigation을 위한 고전 알고리즘은 잘 이해되어 있고 안전하지만, 좋은 성능을 내려면 전문가가 parameter를 직접 조정해야 합니다. APPL 같은 방법은 machine learning으로 배치 중에 planner parameter를 동적으로 조정합니다. 이 접근은 고전 시스템의 안전성을 유지하지만, 바탕이 되는 알고리즘의 한계에 여전히 묶여 있습니다. 우리는 parameter 조정 대신, 고전 planner로 reinforcement learning (강화학습, RL) 알고리즘의 행동 선택을 regularize하자고 제안합니다. 그 결과 얻은 policy는 잘 이해된 고전 알고리즘과 비슷하다는 것이 증명되며, 잘 조정된 고전 planner와 regularization 없는 RL policy 둘 다보다 성능이 좋고, 학습 중에도 사용자가 정한 trust region (신뢰 영역)을 지킨다는 것을 보일 수 있습니다. 실험에서 이 방법은 주행 시간을 DWA보다 8%, TEB보다 43% 줄이고, proximity risk (근접 위험)를 각각 24%, 17% 낮춥니다. 또한 학습 기반 baseline과 같거나 더 나은 성능을 내며 사용자 선호에 더 가깝게 맞춥니다."
+}

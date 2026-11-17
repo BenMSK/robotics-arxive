@@ -1,0 +1,18 @@
+{
+  "id": "drive-in-corridors",
+  "title": "Drive in Corridors: Enhancing the Safety of End-To-End Autonomous Driving Via Corridor Learning and Planning",
+  "authors": ["Zhiwei Zhang", "Ruichen Yang", "Ke Wu", "Zijun Xu", "Jingchu Liu", "Lisen Mu", "Zhongxue Gan", "Wenchao Ding"],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["EndToEndDriving", "Safety", "TrajectoryOptimization", "AutonomousDriving"],
+  "links": { "arxiv": "https://arxiv.org/abs/2504.07507", "pdf": "https://arxiv.org/pdf/2504.07507", "code": "", "project": "https://zhiwei-pg.github.io/Drive-in-Corridors", "official": "" },
+  "tldr": {
+    "en": "An end-to-end driving net also predicts a corridor of obstacle-free boxes and enforces it in a differentiable QP; nuScenes agent collisions drop 66.7%.",
+    "ko": "End-to-end 주행 네트워크가 장애물 없는 사각형 corridor를 함께 예측하고, 이를 미분 가능한 QP의 제약으로 넣어 nuScenes 차량 충돌을 66.7% 줄입니다."
+  },
+  "abstract": "Safety remains one of the most critical challenges in autonomous driving systems. In recent years, the end-to-end driving has shown great promise in advancing vehicle autonomy in a scalable manner. However, existing approaches often face safety risks due to the lack of explicit behavior constraints. To address this issue, we uncover a new paradigm by introducing the corridor as the intermediate representation. Widely adopted in robotics planning, the corridors represents spatio-temporal obstacle-free zones for the vehicle to traverse. To ensure accurate corridor prediction in diverse traffic scenarios, we develop a comprehensive learning pipeline including data annotation, architecture refinement and loss formulation. The predicted corridor is further integrated as the constraint in a trajectory optimization process. By extending the differentiability of the optimization, we enable the optimized trajectory to be seamlessly trained within the end-to-end learning framework, improving both safety and interpretability. Experimental results on the nuScenes dataset demonstrate state-of-the-art performance of our approach, showing a 66.7% reduction in collisions with agents and a 46.5% reduction with curbs, significantly enhancing the safety of end-to-end driving. Additionally, incorporating the corridor contributes to higher success rates in closed-loop evaluations.",
+  "abstract_ko": ""
+}

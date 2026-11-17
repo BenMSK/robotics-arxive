@@ -1,0 +1,36 @@
+{
+  "id": "highway-localization",
+  "title": "Robust Localization for Autonomous Vehicles in Highway Scenes",
+  "authors": [
+    "Daqian Cheng",
+    "Xuchu Ding",
+    "Yujia Wu",
+    "Xiang Zhang",
+    "Lei Wang"
+  ],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": [
+    "LiDAR",
+    "AutonomousDriving",
+    "RobustSLAM",
+    "Dataset",
+    "Benchmark"
+  ],
+  "links": {
+    "arxiv": "https://arxiv.org/abs/2604.22040",
+    "pdf": "https://arxiv.org/pdf/2604.22040",
+    "code": "",
+    "project": "",
+    "official": ""
+  },
+  "tldr": {
+    "en": "Truck localization fusing separate 3D-geometry and road-intensity likelihoods, plus a control-command EKF; no failures on 23 hard highway clips.",
+    "ko": "3D 기하와 노면 intensity likelihood를 따로 계산해 융합하고, 제어 명령 EKF로 지연을 줄인 트럭 localization입니다. 어려운 고속도로 클립 23개에서 실패가 없습니다."
+  },
+  "abstract": "Localization for autonomous vehicles on highways remains under-explored compared to urban roads, and state-of-the-art methods for urban scenes degrade when directly applied to highways. We identify key challenges including environment change under information homogeneity, heavy occlusion, degraded GNSS signals, and stringent downstream requirements on accuracy and latency. We propose a robust localization system to address highway challenges, which uses a dual-likelihood LiDAR front end that decouples 3D geometry structure and 2D road-texture cues to handle environment changes; a Control-EKF further leverages steering and acceleration commands to reduce lag and improve closed-loop behavior. An automated offline mapping and ground-truth pipeline keep maps fresh at high cadence for optimal localization performance. To catalyze progress, we release a public dataset covering both urban roads and highways while focusing on representative challenging highway clips, totaling 163 km; benchmarking is standardized using product-oriented accuracy metrics and certified ground truth. Compared to Apollo and Autoware, our system performs similarly on urban roads but shows superior robustness on challenging highway scenarios. The system has been validated by over one million kilometers of road testing.",
+  "abstract_ko": ""
+}

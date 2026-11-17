@@ -1,0 +1,32 @@
+{
+  "id": "proactive-vi-slam",
+  "title": "Uncertainty-Guided Proactive Adaptation for Visual-Inertial SLAM",
+  "authors": [
+    "Ehsan Ullah Khan",
+    "Gon-Woo Kim"
+  ],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "abstract",
+  "mine": false,
+  "tags": [
+    "RobustSLAM",
+    "VIO",
+    "Uncertainty",
+    "Degeneracy"
+  ],
+  "links": {
+    "arxiv": "",
+    "pdf": "",
+    "code": "",
+    "project": "",
+    "official": "https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=Uncertainty-Guided%20Proactive%20Adaptation%20for%20Visual-Inertial%20SLAM"
+  },
+  "tldr": {
+    "en": "An LSTM with MC Dropout predicts visual feature loss 1-2 s ahead so VI-SLAM can reweight sensors before tracking fails; an idea for featureless garage walls.",
+    "ko": "MC Dropout을 쓴 LSTM이 visual feature 손실을 1–2초 먼저 예측해, tracking이 끊기기 전에 VI-SLAM의 센서 가중치를 바꿉니다. 특징 없는 주차장 벽에 쓸 만한 아이디어입니다."
+  },
+  "abstract": "Visual--inertial SLAM systems often fail in feature-poor environments such as corridors and textureless walls, leading to catastrophic tracking loss. Existing methods detect degradation reactively after failure occurs, leaving little opportunity for corrective action. We propose a proactive framework that predicts feature degradation 1--2 seconds in advance and adapts sensor fusion weights through uncertainty-guided decisions. Through a systematic comparison of eight temporal architectures across 15,233 sequences, including real robot data, we identify LSTM as the most robust predictor (26.77 MAE). We incorporate uncertainty estimation using Monte Carlo Dropout to enable confidence-aware adaptation thresholds that prevent false adjustments. Our approach provides a foundation for proactive SLAM failure prevention through principled sensor fusion and real-time system adaptation.",
+  "abstract_ko": "Visual-inertial SLAM 시스템은 복도나 질감 없는 벽처럼 feature가 부족한 환경에서 자주 실패하며, 치명적인 tracking 손실로 이어집니다. 기존 방법은 실패가 일어난 뒤에야 degradation (열화)을 감지하므로, 바로잡을 여지가 거의 없습니다. 이 논문은 feature degradation을 1–2초 먼저 예측하고, uncertainty (불확실성) 기반 결정으로 sensor fusion 가중치를 조정하는 선제적 프레임워크를 제안합니다. 실제 로봇 데이터를 포함한 15,233개 sequence에서 temporal architecture 여덟 가지를 체계적으로 비교해, LSTM이 가장 robust한 예측기임을 확인합니다(MAE 26.77). Monte Carlo Dropout으로 uncertainty를 추정해, 잘못된 조정을 막는 confidence 기반 적응 threshold를 씁니다. 이 접근은 원리에 기반한 sensor fusion과 실시간 시스템 적응으로 SLAM 실패를 선제적으로 막는 토대를 제공합니다."
+}

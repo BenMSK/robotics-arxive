@@ -1,0 +1,18 @@
+{
+  "id": "g2dp",
+  "title": "G2DP: Diffusion Planning with Spatio-Temporal Grid Guidance",
+  "authors": ["Hang Yu", "Ye Jin", "Alessandro Canevaro", "Julian Schmidt", "Julian Jordan", "Peizheng Li", "Marc Kaufeld", "Silvan Lindner", "Johannes Betz", "Wilhelm Stork"],
+  "venue": "IROS 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["Diffusion", "MotionPlanning", "Prediction", "Safety", "AutonomousDriving"],
+  "links": { "arxiv": "https://arxiv.org/abs/2606.26017", "pdf": "https://arxiv.org/pdf/2606.26017", "code": "https://github.com/HangYuu/G2DP", "project": "", "official": "" },
+  "tldr": {
+    "en": "Steers a diffusion planner with gradients of a predicted occupancy + route cost grid in its last denoising steps; +7.2 reactive score on nuPlan Test14-hard.",
+    "ko": "예측 occupancy와 경로 비용을 합친 grid의 gradient로 마지막 denoising step에서 diffusion planner를 조종해, nuPlan Test14-hard reactive 점수를 7.2점 올립니다."
+  },
+  "abstract": "In autonomous driving, diffusion-based planners have emerged as a promising paradigm for robust motion planning in dense and interactive traffic, as they can effectively model diverse driving behaviors. However, their inherent stochasticity often requires explicit guidance during denoising to ensure safety and route adherence for robust closed-loop execution. Existing guidance typically relies on sparse, entity-centric geometric queries or post-hoc refinement, yielding limited situational awareness and fragile performance in interactive scenes. To address this issue, we propose G2DP (Grid-Guided Diffusion Planning), a diffusion-based planner that directly enforces dense environmental constraints through inference-time guidance. Specifically, G2DP constructs a differentiable spatio-temporal cost volume by fusing probabilistic future occupancy distributions with a route-progress map. By formulating this volume as a continuous safety energy functional, it injects dense gradients directly into the denoising loop, actively steering trajectory generation toward collision-free and progress-optimal regions. Extensive closed-loop evaluations show that G2DP achieves state-of-the-art performance on nuPlan, outperforming the strongest imitation-learning baseline by +7.2 points in reactive score. It further maintains top scores in zero-shot transfers to interPlan and DeepScenario benchmarks, with collision avoidance improving by +10.15 over the unguided approach on interPlan. These results demonstrate that spatio-temporal cost grids serve as an effective representation for robust guidance in diffusion-based planning. Code is available at https://github.com/HangYuu/G2DP.",
+  "abstract_ko": ""
+}

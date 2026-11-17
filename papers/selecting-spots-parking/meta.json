@@ -1,0 +1,18 @@
+{
+  "id": "selecting-spots-parking",
+  "title": "Selecting Spots by Explicitly Predicting Intention from Motion History Improves Performance in Autonomous Parking",
+  "authors": ["Long Kiu Chung", "David Isele", "Faizan M. Tariq", "Sangjae Bae", "Shreyas Kousik", "Jovin D'sa"],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "full",
+  "mine": false,
+  "tags": ["Parking", "Prediction", "MotionPlanning", "AutonomousDriving"],
+  "links": { "arxiv": "https://arxiv.org/abs/2603.04695", "pdf": "https://arxiv.org/pdf/2603.04695", "code": "", "project": "https://sites.google.com/view/chung2026selecting", "official": "" },
+  "tldr": {
+    "en": "Guess which slot each nearby car wants from its past motion, then pick a different one: 99.8% vs ~90% success in simulated valet parking, and zero stolen spots.",
+    "ko": "주변 차가 어느 칸을 노리는지 과거 움직임으로 예측하고 다른 칸을 고릅니다. 시뮬레이션 발레 주차에서 성공률 99.8% (기존 약 90%), 남의 칸을 뺏은 경우 0건입니다."
+  },
+  "abstract": "In many applications of social navigation, existing works have shown that predicting and reasoning about human intentions can help robotic agents make safer and more socially acceptable decisions. In this work, we study this problem for autonomous valet parking (AVP), where an autonomous vehicle ego agent must drop off its passengers, explore the parking lot, find a parking spot, negotiate for the spot with other vehicles, and park in the spot without human supervision. Specifically, we propose an AVP pipeline that selects parking spots by explicitly predicting where other agents are going to park from their motion history using learned models and probabilistic belief maps. To test this pipeline, we build a simulation environment with reactive agents and realistic modeling assumptions on the ego agent, such as occlusion-aware observations, and imperfect trajectory prediction. Simulation experiments show that our proposed method outperforms existing works that infer intentions from future predicted motion or embed them implicitly in end-to-end models, yielding better results in prediction accuracy, social acceptance, and task completion. Our key insight is that, in parking, where driving regulations are more lax, explicit intention prediction is crucial for reasoning about diverse and ambiguous long-term goals, which cannot be reliably inferred from short-term motion prediction alone, but can be effectively learned from motion history.",
+  "abstract_ko": ""
+}

@@ -1,0 +1,38 @@
+{
+  "id": "pceg",
+  "title": "Prior-Constrained Explorative Guidance for Generalization in Diffusion Motion Planning",
+  "authors": [
+    "Sunhwi Kim",
+    "Junsu Kim",
+    "Seungjae Baek",
+    "Jaechan Shin",
+    "Jungeun Lee",
+    "Seongjae Lee",
+    "Kyungdon Joo",
+    "Jeong Hwan Jeon"
+  ],
+  "venue": "ICRA 2026",
+  "year": 2026,
+  "track": "2026",
+  "kind": "abstract",
+  "mine": false,
+  "tags": [
+    "MotionPlanning",
+    "Diffusion",
+    "TrajectoryOptimization",
+    "Manipulation"
+  ],
+  "links": {
+    "arxiv": "",
+    "pdf": "",
+    "code": "",
+    "project": "https://rml-unist.github.io/PCEG/",
+    "official": "https://doi.org/10.1109/icra57385.2026.11696407"
+  },
+  "tldr": {
+    "en": "PCEG adds local exploration and a GP trajectory prior to diffusion-planner guidance, lifting success up to 30 points near unseen obstacles.",
+    "ko": "PCEG는 diffusion planner의 guidance에 국소 탐색과 GP trajectory prior를 더해, 처음 보는 장애물 앞에서 성공률을 최대 30%p 높입니다. 차량용 diffusion planning에 참고할 만합니다."
+  },
+  "abstract": "Diffusion-based planners have achieved generalization comparable to classical planners by leveraging inference-time optimization through guidance. However, their limited ability to capture environmental variations often constrains their responsiveness in unseen settings. In addition, the diversity-consistency trade-off inherent in guidance has remained unresolved. In this work, we propose Prior-Constrained Explorative Guidance (PCEG), a novel approach that gathers environmental information through local exploration and prevents guided samples from converging prematurely to similar solutions by leveraging a trajectory prior. The collected information is included in the guidance via stochastic gradient estimation, while a succinct parameter scheduling strategy enables latent optimization driven by environmental signals without significant computational overhead. Furthermore, during the modal-seeking stages of the reverse diffusion process, we employ a Gaussian Process (GP) to enforce dynamics-informed priors, effectively constraining the exploration region of each sample and thereby enhancing solution diversity. Across diverse benchmarks including 7-degree-of-freedom (7-DoF) robot-arm manipulation, PCEG substantially improves success rate by up to 30 percentage points compared to competitive diffusion planners without compromising trajectory quality, even in scenarios involving unseen obstacles. Real-world experiments further validate these findings, showcasing the generation of smooth, collision-free trajectories in novel environments. The project page is available at https://rml-unist.github.io/PCEG/.",
+  "abstract_ko": "Diffusion (확산) 기반 planner는 guidance를 통한 inference-time optimization (추론 시점 최적화)을 활용해 고전적 planner에 버금가는 일반화 성능을 얻었습니다. 하지만 환경 변화를 포착하는 능력이 부족해, 처음 보는 환경에서 대응력이 떨어지는 경우가 많습니다. 또한 guidance에 내재한 diversity-consistency trade-off (다양성과 일관성의 상충)는 아직 풀리지 않았습니다. 이 연구는 Prior-Constrained Explorative Guidance (PCEG)를 제안합니다. PCEG는 local exploration (국소 탐색)으로 환경 정보를 모으고, trajectory (궤적) prior를 활용해 guided sample이 비슷한 해로 너무 일찍 수렴하지 않도록 막습니다. 모은 정보는 stochastic gradient estimation (확률적 gradient 추정)으로 guidance에 반영되고, 간결한 parameter scheduling 전략 덕분에 큰 계산 부담 없이 환경 신호에 따른 latent optimization이 가능합니다. 또한 reverse diffusion 과정의 modal-seeking 단계에서 Gaussian Process (GP)로 dynamics를 반영한 prior를 부여해, 각 sample의 탐색 영역을 제한하고 해의 다양성을 높입니다. 7-degree-of-freedom (7-DoF) 로봇 팔 manipulation을 포함한 여러 benchmark에서, PCEG는 경쟁력 있는 diffusion planner보다 trajectory 품질을 해치지 않으면서 성공률을 최대 30%p 높이며, 처음 보는 장애물이 있는 경우에도 마찬가지입니다. 실제 로봇 실험도 이 결과를 뒷받침하며, 새로운 환경에서 부드럽고 충돌 없는 trajectory를 생성합니다. 프로젝트 페이지는 https://rml-unist.github.io/PCEG/ 입니다."
+}
